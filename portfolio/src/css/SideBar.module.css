@@ -1,0 +1,38 @@
+.sideBarWrapper {
+  position: absolute;
+  display: flex;
+  float: left;
+  text-align: center;
+  height: 100vh;
+}
+.sideBarContainer {
+  position: relative;
+  background-color: indigo;
+  padding: 1.2rem;
+  z-index: 1;
+  
+
+}
+.sideBarPopupContainer {
+  position: relative;
+  background-color: violet;
+  padding-left: .75em;
+
+  animation-name: slide;
+  animation-duration: 0.5s;
+  z-index: 0;
+}
+
+.sideBarItem {
+  font-size: 1.2rem;
+  margin: 1.2rem 0rem 1.2rem 0rem;
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes slide {
+  0%   {transform: translateX(-200px); }
+
+  100%    {transform: none; }
+
+}
