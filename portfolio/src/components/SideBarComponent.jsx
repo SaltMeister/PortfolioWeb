@@ -16,16 +16,14 @@ export default function SideBarComponent({arrayOfHeaders}) {
             </div>
           )}
       </div> 
-      
-      {isDisplayText? (
-        <div class={`${styles.sideBarContainer} ${styles.sideBarPopupContainer}`}>
-        {arrayOfHeaders.map((index, key) => 
-          <div key={key} class={styles.sideBarItem} > 
-              <p>{index} </p> 
-          </div>
-        )}
-      </div>        
-      ) : (<div/>)}
+
+      <div class={`${styles.sideBarContainer} ${styles.sideBarPopupContainer} ${(isDisplayText ? (styles.display) : (styles.hide))}`}>
+      {arrayOfHeaders.map((index, key) => 
+        <div key={key} class={styles.sideBarItem} > 
+            <p>{index} </p> 
+        </div>
+      )}
+    </div>        
 
 
     </div>

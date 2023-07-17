@@ -17,12 +17,16 @@
   position: relative;
   background-color: violet;
   padding-left: .75em;
-
-  animation-name: slide;
-  animation-duration: 0.5s;
   z-index: 0;
 }
-
+.hide {
+  animation: 0.3s ease-out 0s slideOut;
+  animation-fill-mode: forwards;
+}
+.display {
+  animation: 0.7s ease-out 0s slide;
+  animation-fill-mode: forwards;
+}
 .sideBarItem {
   font-size: 1.2rem;
   margin: 1.2rem 0rem 1.2rem 0rem;
@@ -30,9 +34,19 @@
   justify-content: center;
 }
 
+
+
 @keyframes slide {
-  0%   {transform: translateX(-200px); }
+  0%   {transform: translateX(-200px);
+        display: flex; }
 
   100%    {transform: none; }
+
+}
+@keyframes slideOut {
+  0%      {transform: none; }
+
+  100%    {transform: translateX(-200px);
+          display: none; }
 
 }
