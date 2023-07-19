@@ -1,5 +1,6 @@
 .sideBarWrapper {
-  position: absolute;
+  top: 0em;
+  position: fixed;
   display: flex;
   float: left;
   text-align: center;
@@ -14,13 +15,12 @@
 
 }
 .sideBarPopupContainer {
-  position: relative;
   background-color: violet;
   padding-left: .75em;
   z-index: 0;
 }
 .hide {
-  animation: 0.3s ease-out 0s slideOut;
+  animation: 0.5s ease-out 0s slideOut;
   animation-fill-mode: forwards;
 }
 .display {

@@ -1,0 +1,8 @@
+.displayBox {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 10vw 0rem 10vw;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border: solid 1px black;
+}

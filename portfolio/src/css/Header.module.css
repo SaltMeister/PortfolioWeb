@@ -1,0 +1,10 @@
+.text {
+  text-align: center;
+  margin: auto;
+  padding-top: 2rem;
+
+}
+.botBorder {
+  border-bottom: solid black 2px;
+  box-shadow: darkturquoise 0rem 0.2rem 2rem;
+}
