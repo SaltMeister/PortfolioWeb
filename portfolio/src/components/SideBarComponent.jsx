@@ -11,7 +11,6 @@ export default function SideBarComponent({arrayOfHeaders}) {
   return(
     <div class={styles.sideBarWrapper}
     onMouseLeave={() => setIsDisplayText(false)}>
-      
       {/* ICONS */}
       <div class={styles.sideBarContainer}
           onMouseEnter={() => setIsDisplayText(true)}  >
@@ -29,7 +28,7 @@ export default function SideBarComponent({arrayOfHeaders}) {
       ${(isDisplayText ? (styles.display) : (styles.hide))}`}>
         
         {arrayOfHeaders.map((index, key) => 
-          <div key={key} class={styles.sideBarItem} > 
+          <div key={key} class={styles.sideBarItem} onClick={handleClick}> 
               <p>{index} </p> 
           </div>
         )}

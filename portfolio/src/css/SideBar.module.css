@@ -38,16 +38,16 @@
 @keyframes slideOut {
   0%      {display: block }
 
-  99%    {transform: translateX(-200px); opacity: 0;}
-  100% {  visibility: collapse;}
+  99%    {transform: translateX(-200px);}
+  100% {  opacity: 0; visibility: hidden;}
 
 }
 
 .hide {
-  animation: slideOut 500ms;
+  animation: slideOut 300ms;
   animation-fill-mode: forwards;
 }
 
 .display {
-  animation: 0.5s ease-out 0s slide;
+  animation: slide 200ms;
 }
