@@ -11,6 +11,10 @@ export default function DisplayComponent({title, description, link}) {
     <div class={styles.displayItem} onClick={goToLink}>
       <h3 class={styles.title}>{title}</h3>
       <p class={styles.text}>{description}</p>
+
+      <svg width="100" height="100">
+        <circle cx="50" cy="50" r="20" stroke="green" stroke-width="2" fill="ivory"/>
+      </svg>
     </div>
   )
 

@@ -1,10 +1,10 @@
 .sideBarWrapper {
-  top: 0em;
+  top: 4em;
   position: fixed;
   display: flex;
   float: left;
   text-align: center;
-  height: 100vh;
+  height: fit-content;
 }
 .sideBarContainer {
   position: relative;
@@ -19,34 +19,35 @@
   padding-left: .75em;
   z-index: 0;
 }
-.hide {
-  animation: 0.5s ease-out 0s slideOut;
-  animation-fill-mode: forwards;
-}
-.display {
-  animation: 0.5s ease-out 0s slide;
-  animation-fill-mode: forwards;
-}
 .sideBarItem {
   font-size: 1.2rem;
-  margin: 1.2rem 0rem 1.2rem 0rem;
+  padding: 1.2rem;
   display: flex;
   justify-content: center;
+  
 }
 
 
 
 @keyframes slide {
-  0%   {transform: translateX(-200px);
-        display: flex; }
+  0%   {transform: translateX(-200px)}
 
-  100%    {transform: none; }
+  100%    {display: block; }
 
 }
 @keyframes slideOut {
-  0%      {transform: none; }
+  0%      {display: block }
 
-  100%    {transform: translateX(-200px);
-          display: none; }
+  99%    {transform: translateX(-200px); opacity: 0;}
+  100% {  visibility: collapse;}
 
+}
+
+.hide {
+  animation: slideOut 500ms;
+  animation-fill-mode: forwards;
+}
+
+.display {
+  animation: 0.5s ease-out 0s slide;
 }

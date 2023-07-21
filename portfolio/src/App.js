@@ -12,9 +12,16 @@ function App() {
   const desc5 ="A website that allows users to search and save recipes. Users can sign up and keep their data. Worked on the user authentication between the client and server/database. Created using React, Flask, Tailwind, and MongoDB."
   return (
     <div className="App">
-      <HeaderComponent headerText="Portfolio"/>
+      <header>
+        <HeaderComponent headerText="Portfolio"/>
+      </header>
+      
       <SideBarComponent arrayOfHeaders={["Home", "Projects", "Resume"]}/>
-
+      <DisplayBoxComponent>
+        
+      </DisplayBoxComponent>
+      
+      {/* Project Section */}
       <DisplayBoxComponent>
         <DisplayComponent title="Pantry Pal" description={desc5} link="https://github.com/Jeffuz/Pantry-Pals"/>
         <DisplayComponent title="FitFlow" description={desc4} link="https://devpost.com/software/fitflow-pacuwy"/>
@@ -22,6 +29,14 @@ function App() {
         <DisplayComponent title="Bitcoin Defenders" description={desc2} link="https://github.com/SaltMeister/BitcoinDefender"/>
         <DisplayComponent title="Music Player" description={desc3} link="https://github.com/SaltMeister/Mp3Player"/>
       </DisplayBoxComponent>
+
+      {/* Resume Section */}
+      <DisplayBoxComponent>
+
+      </DisplayBoxComponent>
+      <footer>
+
+      </footer>
     </div>
   );
 }
