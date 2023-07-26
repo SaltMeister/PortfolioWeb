@@ -1,6 +1,8 @@
 .App {
-  background-color: slategray;
+  
   font-size: 2rem;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
+body {
+  background-color: slategray;
+}
