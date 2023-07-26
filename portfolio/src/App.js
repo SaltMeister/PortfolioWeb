@@ -24,7 +24,9 @@ function App() {
         <HeaderComponent headerText="Portfolio" />
       </header>
       
-      <SideBarComponent arrayOfHeaders={["Home", "Projects", "Resume"]} setMode={setMode}/>
+      <SideBarComponent arrayOfHeaders={["Home", "Projects", "Resume"]} 
+                        arrayOfImages={["images/home.png", "images/projects.png", "images/resume.png"]} 
+                        setMode={setMode}/>
       {/* About Section */}
       {mode === 0? (      
         <DisplayBoxComponent title="About">

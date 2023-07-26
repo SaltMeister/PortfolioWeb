@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import styles from '../css/SideBar.module.css';
 
-export default function SideBarComponent({arrayOfHeaders, setMode}) {
+export default function SideBarComponent({arrayOfHeaders, arrayOfImages, setMode}) {
   const [isDisplayText, setIsDisplayText] = useState(false);
 
   console.log(isDisplayText);
@@ -19,7 +19,7 @@ export default function SideBarComponent({arrayOfHeaders, setMode}) {
         
           {arrayOfHeaders.map((index, key) => 
             <div class={styles.sideBarItem} onClick={event => handleClick(key)}> 
-              <p key={key}>{index} </p> 
+              <img class={styles.image} key={key} alt="icon" src={arrayOfImages[key]}/>
             </div>
           )}
       </div> 
