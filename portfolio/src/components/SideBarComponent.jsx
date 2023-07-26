@@ -1,12 +1,14 @@
 import React, {useState} from "react";
 import styles from '../css/SideBar.module.css';
 
-export default function SideBarComponent({arrayOfHeaders}) {
+export default function SideBarComponent({arrayOfHeaders, setMode}) {
   const [isDisplayText, setIsDisplayText] = useState(false);
 
   console.log(isDisplayText);
-  const handleClick = (event) => {
-
+  const handleClick = (key) => {
+    console.log(key);
+    
+    setMode(key);
   }
   return(
     <div class={styles.sideBarWrapper}
@@ -16,8 +18,8 @@ export default function SideBarComponent({arrayOfHeaders}) {
           onMouseEnter={() => setIsDisplayText(true)}  >
         
           {arrayOfHeaders.map((index, key) => 
-            <div key={key} class={styles.sideBarItem}> 
-              <p>{index} </p> 
+            <div class={styles.sideBarItem} onClick={event => handleClick(key)}> 
+              <p key={key}>{index} </p> 
             </div>
           )}
       </div> 
@@ -28,8 +30,8 @@ export default function SideBarComponent({arrayOfHeaders}) {
       ${(isDisplayText ? (styles.display) : (styles.hide))}`}>
         
         {arrayOfHeaders.map((index, key) => 
-          <div key={key} class={styles.sideBarItem} onClick={handleClick}> 
-              <p>{index} </p> 
+          <div class={styles.sideBarItem} onClick={event => handleClick(key)}> 
+              <p key={key}>{index} </p> 
           </div>
         )}
       </div>
