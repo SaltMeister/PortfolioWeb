@@ -1,7 +1,9 @@
 .text {
   text-align: center;
+  font-size: calc(2rem + 1vw);
   margin: auto;
   padding-top: 2rem;
+  padding-bottom: 1rem;
 
 }
 .botBorder {

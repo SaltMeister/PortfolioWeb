@@ -18,15 +18,25 @@ function App() {
 
   const [mode, setMode] = useState(0);
   
+  const handleSetMode = (value) => {
+    if(value === 2)
+    {
+      value = 1;
+      // Open Resume file
+      window.open("Simon_Resume.pdf");
+    }  
+    
+    setMode(value);
+  }
   return (
     <div className="App">
       <header>
-        <HeaderComponent headerText="Portfolio" />
+        <HeaderComponent headerText="Simon Huang" />
       </header>
       
       <SideBarComponent arrayOfHeaders={["Home", "Projects", "Resume"]} 
                         arrayOfImages={["images/home.png", "images/projects.png", "images/resume.png"]} 
-                        setMode={setMode}/>
+                        setMode={handleSetMode}/>
       {/* About Section */}
       {mode === 0? (      
         <DisplayBoxComponent title="About">
@@ -49,15 +59,6 @@ function App() {
         </DisplayBoxComponent>) 
         : null
       }
-
-
-      {/* Resume Section */}
-      {mode === 2? (      
-        <DisplayBoxComponent title="Resume">
-
-        </DisplayBoxComponent>) : null
-      }
-
       <footer>
 
       </footer>
