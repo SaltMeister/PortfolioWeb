@@ -6,3 +6,11 @@
 body {
   background-color: slategray;
 }
+
+.footer {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  background-color: #647381;
+  font-size: calc(0.5rem + 1vw);
+}

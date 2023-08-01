@@ -60,7 +60,9 @@ function App() {
         : null
       }
       <footer>
-
+        <div className="footer">
+          <p>All Rights Reserved © 2023</p>
+        </div>
       </footer>
     </div>
   );
