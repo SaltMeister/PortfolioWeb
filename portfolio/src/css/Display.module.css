@@ -8,11 +8,14 @@
   min-width: 20rem;
   height: auto;
   width: auto;
-  box-shadow: 0px 2px 5px grey;
   transition: all 1000ms;
+  box-shadow: 0px 0px 1px lightblue;
+
 }
 .displayItem:hover {
-  background-color: seashell;
+  box-shadow: 0px 0px 10px goldenrod;
+  background-color: #8599ad;
+  opacity: 60%;
 }
 .title {
   font-size: calc(15px + 1vw);

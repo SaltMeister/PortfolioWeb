@@ -14,12 +14,12 @@ export default function DisplayComponent({title, description, link}) {
     setIsHover(true);
   }
   return(
-    <div class={styles.displayItem} onClick={goToLink}
+    <div className={styles.displayItem} onClick={goToLink}
         onMouseEnter={setTrue} onMouseLeave={setFalse}>
 
 
-      <h3 class={styles.title}>{title}</h3>
-      <p class={styles.text}>{description}</p>
+      <h3 className={styles.title}>{title}</h3>
+      <p className={styles.text}>{description}</p>
 
       <div >
         {isHover? (        

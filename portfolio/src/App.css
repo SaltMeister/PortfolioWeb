@@ -1,16 +1,16 @@
 .App {
-  
+  min-height: 100vh;
   font-size: 2rem;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 body {
-  background-color: slategray;
+  background-color: #738ba2;
 }
 
 .footer {
   margin-top: 2rem;
   display: flex;
   justify-content: center;
-  background-color: #647381;
+  background-color: #677d91;
   font-size: calc(0.5rem + 1vw);
 }

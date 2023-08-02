@@ -3,9 +3,9 @@ import styles from "../css/About.module.css";
 
 export default function AboutComponent({about, imageLink}) {
   return(
-    <div class={styles.aboutWrapper}>
-      <img src={imageLink} class={styles.image} alt="Profile"/>
-      <p class={styles.text}>{about}</p>
+    <div className={styles.aboutWrapper}>
+      <img src={imageLink} className={styles.image} alt="Profile"/>
+      <p className={styles.text}>{about}</p>
     </div>
   )
 }

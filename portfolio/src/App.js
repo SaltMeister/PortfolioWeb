@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import './App.css';
+
 import AboutComponent from './components/AboutComponent';
 import DisplayBoxComponent from './components/DisplayBoxComponent';
 import DisplayComponent from './components/DisplayComponent';
@@ -33,10 +34,11 @@ function App() {
       <header>
         <HeaderComponent headerText="Simon Huang" />
       </header>
-      
+        
       <SideBarComponent arrayOfHeaders={["Home", "Projects", "Resume"]} 
                         arrayOfImages={["images/home.png", "images/projects.png", "images/resume.png"]} 
                         setMode={handleSetMode}/>
+
       {/* About Section */}
       {mode === 0? (      
         <DisplayBoxComponent title="About">
