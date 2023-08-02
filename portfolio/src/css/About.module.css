@@ -1,20 +1,31 @@
 .image {
-  display: block;
-  max-height: 300px;
-  max-width: 200px;
-  width: auto;
-  height: auto;
+  max-height: 250px;
+  max-width: 150px;
   border-radius: 10%;
 }
 .text {
+  text-align: left;
+  margin-right: 50vw;
   margin-left: calc(0.5rem + 2vw);
-  font-size: calc(10px + 1vw)
+  font-size: calc(5px + 1vw)
 }
 
 .aboutWrapper {
-  display: flex;
+  display: block;
   text-align: left;
-
   margin: 2rem;
-  padding: 1rem;
+  padding: 3rem 5vw 3rem 5vw;
+}
+.contentBox {
+  display: flex;
+}
+.largeTitle {
+  margin: 0px;
+}
+.smallTitle {
+  margin: 0px;
+  font-size: calc(5px + 1vw);
+}
+@media screen {
+  
 }

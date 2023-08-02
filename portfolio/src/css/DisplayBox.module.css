@@ -1,19 +1,21 @@
 .displayBox {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: center;
-  margin: 1rem 10vw 0rem 10vw;
+  display: block;
+  margin: 1rem 5vw 0rem 5vw;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  background-color:#c7d0d9;
   border-radius: 1%;
   animation: fadeIn 700ms;
+  border: 1px solid black;
 }
+.children {
+  margin: auto;
+  display: flex;
+  flex-flow: column wrap;
 
+}
 .header {
-  font-size: calc(10px + 2vw);
-  margin-left: 1.5rem;
+  margin: 0px;
+  font-size: calc(15px + 3vw);
 }
 @keyframes fadeIn {
   from { opacity: 15%;}

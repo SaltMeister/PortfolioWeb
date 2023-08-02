@@ -1,10 +1,19 @@
 import React from "react";
 import styles from "../css/Header.module.css";
 
-export default function HeaderComponent({headerText}){
+export default function HeaderComponent({arrayOfHeaders, setMode}){
+  const handleClick = (key) => {
+    setMode(key);
+  }
   return(
-    <div>
-      <h1 className={`${styles.text} ${styles.botBorder}` }>{headerText}</h1>
+    <div className={styles.name}>
+      <div className={styles.rightItems}>
+        {arrayOfHeaders.map((value, key) => {
+          return(
+            <button className={styles.header} onClick={(event) => handleClick(key)} key={key}>{value}</button>
+          )
+        })}        
+      </div>
     </div>
   );
 }

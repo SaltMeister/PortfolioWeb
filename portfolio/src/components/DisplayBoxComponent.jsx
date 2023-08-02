@@ -4,7 +4,8 @@ export default function DisplayBoxComponent({children, title}) {
   return(
     <div className={styles.displayBox}>
       <h3 className={styles.header}>{title}</h3>
-      <div>
+
+      <div className={styles.children}>
         {children}
       </div>
     </div>

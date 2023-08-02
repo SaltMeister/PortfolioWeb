@@ -1,20 +1,14 @@
 .displayItem {
-  display: block;
-  text-align: left;
+  display: flex;
   
   margin: 2rem;
   padding: 1rem;
   padding-bottom: 4rem;
-  min-width: 20rem;
-  height: auto;
-  width: auto;
+
   transition: all 1000ms;
-  box-shadow: 0px 0px 1px lightblue;
 
 }
 .displayItem:hover {
-  box-shadow: 0px 0px 10px goldenrod;
-  background-color: #8599ad;
   opacity: 60%;
 }
 .title {
@@ -25,13 +19,13 @@
   font-size: calc(5px + 1vw)
 }
 
-.arrow {
+/* .arrow {
   animation: slideRight 1000ms;
   margin: auto;
   opacity: 0%;
   animation-fill-mode: forwards;
   position: absolute;
-}
+} */
 
 @keyframes slideRight {
   0% {opacity: 0;

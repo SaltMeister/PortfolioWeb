@@ -1,12 +1,27 @@
-.text {
-  text-align: center;
-  font-size: calc(2rem + 1vw);
+.name {
+  display: flex;
   margin: auto;
-  padding-top: 2rem;
-  padding-bottom: 1rem;
+  justify-content: space-between;
+  font-size: calc(0.75rem + 1vw);
 
 }
-.botBorder {
-  background-color: #738ba2;
-  box-shadow: 0px 1px 5px slategray;
+.rightItems {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-right: 2rem;
 }
+
+.header {
+  transition: all 200ms;
+  font-size: calc(0.5rem + 1vw);
+  padding: 2rem;
+  background-color: transparent;
+  border: none;
+}
+.header:hover {
+  -webkit-filter: brightness(50%);
+}
+.leftItems {
+  margin-left: 2rem;
+} 
