@@ -13,3 +13,34 @@ body {
   /* background-color: ; */
   font-size: calc(0.5rem + 1vw);
 }
+
+.slideOutItem {
+  animation: slideLeft 1s;
+  animation-fill-mode: forwards;
+}
+.slideInItem {
+  animation: slideIn 1.5s;
+
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes slideIn {
+  from {
+    opacity: 0%;
+    -webkit-transform: translateY(-100%);
+  }
+  to {
+    opacity: 100%;
+    transform: none;
+    display: block;
+  }
+}
+@keyframes slideLeft {
+  from {transform: none;}
+
+  to {opacity: 0%;
+      display: none;
+      -webkit-transform: translateX(-100%);
+    }
+}

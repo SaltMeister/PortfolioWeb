@@ -19,6 +19,7 @@ function App() {
   const [mode, setMode] = useState(0);
   
   const handleSetMode = (value) => {
+    console.log(value);
     if(value === 2)
     {
       value = 1;
@@ -38,8 +39,11 @@ function App() {
                         arrayOfImages={["images/home.png", "images/projects.png", "images/resume.png"]} 
                         setMode={handleSetMode}/> */}
 
-      {/* About Section */}    
-      <AboutComponent/>
+      {/* About Section */}  
+      <div className={mode === 0? 'slideInDown' : 'slideOutItem'}>
+        <AboutComponent/>
+      </div>  
+      
 
 
       
