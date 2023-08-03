@@ -8,8 +8,6 @@ import DisplayComponent from './components/DisplayComponent';
 import HeaderComponent from './components/HeaderComponent';
 import SideBarComponent from './components/SideBarComponent';
 
-const about = "I am a 4th year student studying Computer Science at the University of California Davis. I am a motivated individual looking to develop my skills developing front-end and back-end applications.";
-
 const desc1 = "A simple game of checkers created using react.";
 const desc2 ="An android game where you defend your graphics cards from bitcoin miners. Created using Java";
 const desc3 ="A Music player created with C# and the .Net framework";
@@ -41,7 +39,7 @@ function App() {
                         setMode={handleSetMode}/> */}
 
       {/* About Section */}    
-      <AboutComponent title="Hello I'm Simon" title2="Student - Software Engineer" about={about} imageLink="images/profile.jpg"/>
+      <AboutComponent/>
 
 
       

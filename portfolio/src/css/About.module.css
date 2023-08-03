@@ -2,12 +2,15 @@
   max-height: 250px;
   max-width: 150px;
   border-radius: 10%;
+  margin: 0rem 2rem 2rem 2rem;
+  margin-right: 30vw;
 }
 .text {
   text-align: left;
-  margin-right: 50vw;
-  margin-left: calc(0.5rem + 2vw);
-  font-size: calc(5px + 1vw)
+  font-size: calc(5px + 1.2vw)
+}
+.textBox {
+  /* flex: ; */
 }
 
 .aboutWrapper {
@@ -17,14 +20,23 @@
   padding: 3rem 5vw 3rem 5vw;
 }
 .contentBox {
+  margin-top: calc(1rem + 1vh);
   display: flex;
+  flex:auto;
 }
 .largeTitle {
   margin: 0px;
+  font-size: calc(5px + 2vw);
 }
 .smallTitle {
   margin: 0px;
+  color: darkgray;
+  filter: brightness(60%);
   font-size: calc(5px + 1vw);
+}
+.highlight { 
+  color: #00ADB5;
+  filter: brightness(100%);
 }
 @media screen {
   
