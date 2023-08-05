@@ -8,6 +8,7 @@ import DisplayComponent from './components/DisplayComponent';
 import HeaderComponent from './components/HeaderComponent';
 // import SideBarComponent from './components/SideBarComponent';
 import checkers from "./images/checkers.png";
+import resumePDF from "./Simon_Resume.pdf";
 
 const desc1 = "A simple game of checkers created using react.";
 const desc2 ="An android game where you defend your graphics cards from bitcoin miners. Created using Java";
@@ -25,7 +26,7 @@ function App() {
     {
       value = 1;
       // Open Resume file
-      //window.open("Simon_Resume.pdf");
+      window.open(resumePDF);
     }  
     
     setMode(value);
@@ -49,7 +50,7 @@ function App() {
 
       
       {/* Project Section */}
-      <div className={mode === 1? 'slideUpDelayedItem' : 'slideOutItem'}>
+      <div className={mode === 1? 'slideUpDelayedItem' : 'slideDownDelayedItem'}>
         <DisplayBoxComponent>
           <DisplayComponent 
             title="Pantry Pal" 
