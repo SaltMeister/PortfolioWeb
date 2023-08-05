@@ -1,5 +1,5 @@
 .App {
-  min-height: 100vh;
+  height: fit-content;
   font-size: 2rem;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -10,22 +10,35 @@ body {
 .footer {
   display: flex;
   justify-content: center;
+  position: relative;
+  bottom: 0px;
   /* background-color: ; */
   font-size: calc(0.5rem + 1vw);
 }
 
 .slideOutItem {
   animation: slideLeft 1s;
+  position: absolute;
   animation-fill-mode: forwards;
 }
-.slideInItem {
-  animation: slideIn 1.5s;
-
+.slideInDownItem {
+  animation: slideInDown 1.5s;
+  position: absolute;
   animation-fill-mode: forwards;
 }
 
+.slideUpDelayedItem {
+  opacity: 0%;
+  position: absolute;
+  animation: slideUp 1.5s;
+  animation-fill-mode: forwards;
+}
+.slideDownDelayedItem {
+  animation: slideDown 1.5s;
+  animation-fill-mode: forwards;
+}
 
-@keyframes slideIn {
+@keyframes slideInDown {
   from {
     opacity: 0%;
     -webkit-transform: translateY(-100%);
@@ -36,6 +49,7 @@ body {
     display: block;
   }
 }
+
 @keyframes slideLeft {
   from {transform: none;}
 
@@ -43,4 +57,28 @@ body {
       display: none;
       -webkit-transform: translateX(-100%);
     }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0%;
+
+    -webkit-transform: translateY(100%);
+  }
+  to {
+    opacity: 100%;
+    transform: none;
+    display: block;
+  }
+}
+@keyframes slideDown {
+  from {
+    opacity: 100%;
+    transform: none;
+  }
+  to {
+    opacity: 0%;
+    -webkit-transform: translateY(100%);
+    display: none;
+  }
 }

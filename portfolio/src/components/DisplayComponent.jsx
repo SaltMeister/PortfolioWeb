@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
 import styles from "../css/Display.module.css";
 
-export default function DisplayComponent({title, description, link}) {
+export default function DisplayComponent({title, description, gitLink, projLink, image, technologyUsed}) {
   
   const [isHover, setIsHover] = useState(false);
   const goToLink = (e) => {
-    window.open(link, "Null");
+    window.open(gitLink, "Null");
   }
   const setFalse = () => {
     setIsHover(false);
@@ -18,9 +18,20 @@ export default function DisplayComponent({title, description, link}) {
         onMouseEnter={setTrue} onMouseLeave={setFalse}>
 
 
-      <h3 className={styles.title}>{title}</h3>
-      <p className={styles.text}>{description}</p>
+      <div className={styles.content}>
 
+        <div className={styles.informationContent}>
+          <h3 className={styles.title}>{title}</h3>
+          <p className={styles.text}>{description}</p>
+          <p className={styles.technologyItems}>{technologyUsed}</p>
+          <p className={styles.icon}>Github - Link</p>
+        </div>
+
+        <div className={styles.imageContent}>
+          <img src={image} alt="text"/>        
+        </div> 
+               
+      </div>
 
     </div>
   )

@@ -6,12 +6,13 @@ import AboutComponent from './components/AboutComponent';
 import DisplayBoxComponent from './components/DisplayBoxComponent';
 import DisplayComponent from './components/DisplayComponent';
 import HeaderComponent from './components/HeaderComponent';
-import SideBarComponent from './components/SideBarComponent';
+// import SideBarComponent from './components/SideBarComponent';
+import checkers from "./images/checkers.png";
 
 const desc1 = "A simple game of checkers created using react.";
 const desc2 ="An android game where you defend your graphics cards from bitcoin miners. Created using Java";
 const desc3 ="A Music player created with C# and the .Net framework";
-const desc4 = "A website created for CitroHacks 2023 that uses the OpenAI api to generate weekly plans for the user. Created using React, Flask, and Tailwind CSS.";
+const desc4 = "A website created for CitroHacks 2023 that uses the OpenAI api to generate weekly plans for the user. I worked on the back-end communications for this project. Created using React, Flask, and Tailwind CSS.";
 const desc5 ="A website that allows users to search and save recipes. Users can sign up and keep their data. Worked on the user authentication between the client and server/database. Created using React, Flask, Tailwind, and MongoDB."
 
 function App() {
@@ -40,7 +41,7 @@ function App() {
                         setMode={handleSetMode}/> */}
 
       {/* About Section */}  
-      <div className={mode === 0? 'slideInDown' : 'slideOutItem'}>
+      <div className={mode === 0? 'slideInDownItem' : 'slideOutItem'}>
         <AboutComponent/>
       </div>  
       
@@ -48,25 +49,47 @@ function App() {
 
       
       {/* Project Section */}
-   
-        {/* <DisplayBoxComponent title="Projects">
-          <DisplayComponent title="Pantry Pal" description={desc5} link="https://github.com/Jeffuz/Pantry-Pals"/>
-          <DisplayComponent title="FitFlow" description={desc4} link="https://devpost.com/software/fitflow-pacuwy"/>
+      <div className={mode === 1? 'slideUpDelayedItem' : 'slideOutItem'}>
+        <DisplayBoxComponent>
+          <DisplayComponent 
+            title="Pantry Pal" 
+            description={desc5} 
+            gitLink="https://github.com/Jeffuz/Pantry-Pals"
+            technologyUsed="React - Flask - MongoDB - Tailwind CSS"
+            image = {checkers}/>
+
+          <DisplayComponent 
+            title="FitFlow" 
+            description={desc4} 
+            gitLink="https://devpost.com/software/fitflow-pacuwy"
+            technologyUsed="React - Flask - MongoDB - Tailwind CSS"
+            image = {checkers}/>
+          
+          <DisplayComponent
+            title="Mp3 Player"
+            description={desc3}
+            gitLink=""
+            technologyUsed="C# - .Net - WPF"
+            image = {checkers}/>
+
+          <DisplayComponent
+            title="Checkers"
+            description={desc1}
+            gitLink=""
+            technologyUsed="React"
+            image = {checkers}/>
+            {/* 
           <DisplayComponent title="Music Player" description={desc3} link="https://github.com/SaltMeister/Mp3Player"/>
           <DisplayComponent title="Checkers" description={desc1} link="https://saltmeister.github.io/checkers/" />
-          <DisplayComponent title="Bitcoin Defenders" description={desc2} link="https://github.com/SaltMeister/BitcoinDefender"/>
+          <DisplayComponent title="Bitcoin Defenders" description={desc2} link="https://github.com/SaltMeister/BitcoinDefender"/> */}
         </DisplayBoxComponent>
-
-        <DisplayBoxComponent>
-          
-        </DisplayBoxComponent> */}
-
-
-      <footer>
         <div className="footer">
-          <p>All Rights Reserved © 2023</p>
+        <p>All Rights Reserved © 2023</p>
         </div>
-      </footer>
+      </div>
+
+
+
     </div>
   );
 }

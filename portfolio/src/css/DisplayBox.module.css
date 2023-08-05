@@ -15,7 +15,7 @@
 }
 .header {
   margin: 0px;
-  font-size: calc(15px + 3vw);
+  font-size: calc(15px + 1.5vw);
 }
 @keyframes fadeIn {
   from { opacity: 15%;}

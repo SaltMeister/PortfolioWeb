@@ -3,16 +3,17 @@
   max-width: 150px;
   border-radius: 10%;
   margin: 0rem 2rem 2rem 2rem;
-  margin-right: 30vw;
 }
 .text {
   text-align: left;
   font-size: calc(5px + 1.2vw)
 }
 .textBox {
-  /* flex: ; */
+   flex: 1;
 }
-
+.imageBox {
+  flex: 2;
+}
 .aboutWrapper {
   display: block;
   text-align: left;
@@ -22,7 +23,6 @@
 .contentBox {
   margin-top: calc(1rem + 1vh);
   display: flex;
-  flex:auto;
 }
 .largeTitle {
   margin: 0px;
