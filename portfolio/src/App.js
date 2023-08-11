@@ -3,6 +3,7 @@ import './App.css';
 
 
 import AboutComponent from './components/AboutComponent';
+import ContactComponent from './components/ContactComponent';
 import DisplayBoxComponent from './components/DisplayBoxComponent';
 import DisplayComponent from './components/DisplayComponent';
 import HeaderComponent from './components/HeaderComponent';
@@ -88,7 +89,10 @@ function App() {
         <p>All Rights Reserved © 2023</p>
         </div>
       </div>
-
+      
+      <div>
+        <ContactComponent/>
+      </div>
 
 
     </div>
