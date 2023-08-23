@@ -29,15 +29,17 @@
 
 .technologyItems {
   color: #00ADB5;
-  text-align: center;
+  text-align: left;
   font-size: calc(2px + 1vw);
 }
 
 .icon {
-  text-align: center;
-  font-size: calc(2px + 1vw);
+  display: flex;
+  justify-content: left;
 }
+
 .linkIcons {
+  margin-right: 1.5rem;
   transition: color 500ms;
   color: #00565a;
 }

@@ -5,6 +5,10 @@ import { AiFillGithub, AiOutlineLink } from "react-icons/ai";
 export default function DisplayComponent({title, description, gitLink, projLink, image, technologyUsed, isLiveLink, liveLink}) {
   
   const [isHover, setIsHover] = useState(false);
+  const [iconSize, setIconSize] = useState(60);
+
+  
+
   const goToLink = (e) => {
     window.open(gitLink, "Null");
   }
@@ -29,8 +33,8 @@ export default function DisplayComponent({title, description, gitLink, projLink,
           <p className={styles.text}>{description}</p>
           <p className={styles.technologyItems}>{technologyUsed}</p>
           <p className={styles.icon}>
-            <span onClick={goToLink}> <AiFillGithub size={60} className={styles.linkIcons}/> </span> 
-            {isLiveLink? <span onClick={goToLiveLink}><AiOutlineLink size={60} className={styles.linkIcons}/></span> : null}
+            <span onClick={goToLink}> <AiFillGithub size={50} className={styles.linkIcons}/> </span> 
+            {isLiveLink? <span onClick={goToLiveLink}><AiOutlineLink size={50} className={styles.linkIcons}/></span> : null}
           </p>
 
         </div>
