@@ -11,24 +11,37 @@ import HeaderComponent from './components/HeaderComponent';
 
 // Images for items
 import checkers from "./images/checkers.png";
+import checkers1 from "./images/checkers1.png";
+import checkers2 from "./images/checkers2.png";
+
 import resumePDF from "./Simon_Resume.pdf";
 import bitCoin from "./images/defender.png";
+
 import fitFlow from "./images/fitFlowHome.png";
+import fitFlow2 from "./images/fitFlow2.png";
+import fitFlow3 from "./images/fitFlow3.png";
+
 import mp3 from "./images/mp3Player.png";
 import ppal from "./images/ppal.png";
+
+import eduTrade1 from "./images/eduTrade1.png";
+import eduTrade2 from "./images/eduTrade2.png";
+import eduTrade3 from "./images/eduTrade3.png";
+import eduTrade4 from "./images/eduTrade4.png";
+import eduTrade5 from "./images/eduTrade5.png";
 //
 
 const desc1 = "A simple game of checkers created using react.";
 
-const desc2 ="A Tower Defence android game where you protect your precious graphics cards from the bitcoin miners.";
+const desc2 ="A Tower Defence android game where you protect your precious graphics cards from the bitcoin miners. Choose between 2 weapons and survive for 2 minutes.";
 
 const desc3 ="A Music player application created with C# and the .Net framework. Select folders you wish to look for mp3 files and play them.";
 
 const desc4 = "A website created for CitroHacks 2023 that uses the OpenAI api to generate weekly plans for the user. I worked on the back-end communications for this project.";
 
-const desc5 ="A website that allows users to search and save recipes. Users can sign up and keep their list of saved recipes, and view them at any time. Worked on the user authentication between the client and server/database and the login/signup page. Created using React, Flask, Tailwind, and MongoDB."
+const desc5 ="A website that allows users to search and save recipes. Users can sign up and keep their list of saved recipes, and view them at any time. I worked on the user authentication between the client and server/database and the login/signup page."
 
-const eduDesc = "A used item selling website built to help students find items that other students no longer need. Users can sell or give away their old school supplies to others in the local area. Users can search and filter their interests by location and communicate through live chatting to confirm their meetup location."
+const eduDesc = ["A used item selling website built to help students find items that other students no longer need. Users can sell or give away their old school supplies to others in the local area. Users can search and filter their interests by location and communicate through live chatting to confirm their meetup location.", <br />, "I developed the database communication from the client, the search query and location filters, and the front end for the item displays for each listing."]
 function App() {
 
   const [mode, setMode] = useState(0);
@@ -71,7 +84,7 @@ function App() {
             description = {eduDesc}
             gitLink = "https://github.com/Jeffuz/EduTrade"
             technologyUsed="React - Firebase/Firestore - Tailwind CSS"
-            images = {[]}
+            images = {[eduTrade1, eduTrade2, eduTrade3, eduTrade4, eduTrade5]}
             isLiveLink = {true}
             liveLink = "https://jeffuz.github.io/EduTrade/"
           />
@@ -89,7 +102,7 @@ function App() {
             description = {desc4} 
             gitLink = "https://github.com/Jeffuz/FitFlow"
             technologyUsed  ="React - Flask - MongoDB - Tailwind CSS"
-            images = {[fitFlow, checkers]}
+            images = {[fitFlow, fitFlow2, fitFlow3]}
             isLiveLink = {true}
             liveLink = "https://devpost.com/software/fitflow-pacuwy"/>
           
@@ -106,7 +119,7 @@ function App() {
             description = {desc1}
             gitLink = "https://github.com/SaltMeister/checkers"
             technologyUsed = "React"
-            images = {[checkers]}
+            images = {[checkers1, checkers2, checkers]}
             isLiveLink = {true}
             liveLink = "https://saltmeister.github.io/checkers/"
             />
