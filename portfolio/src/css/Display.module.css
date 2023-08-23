@@ -26,9 +26,9 @@
   flex: 1;
 }
 
+
 .technologyItems {
-  color: lightskyblue;
-  filter: brightness(75%);
+  color: #00ADB5;
   text-align: center;
   font-size: calc(2px + 1vw);
 }
@@ -37,7 +37,13 @@
   text-align: center;
   font-size: calc(2px + 1vw);
 }
-
+.linkIcons {
+  transition: color 500ms;
+  color: #00565a;
+}
+.linkIcons:hover {
+  color: darkblue;
+}
 img {
   aspect-ratio: auto;
   margin: 2rem;
