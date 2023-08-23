@@ -41,6 +41,7 @@ body {
 @keyframes slideInDown {
   from {
     opacity: 0%;
+    display: none;
     -webkit-transform: translateY(-100%);
   }
   to {
@@ -75,10 +76,12 @@ body {
   from {
     opacity: 100%;
     transform: none;
+    position: fixed;
   }
   to {
     opacity: 0%;
     -webkit-transform: translateY(100%);
+    position: fixed;
     display: none;
   }
 }

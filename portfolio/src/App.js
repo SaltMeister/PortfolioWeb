@@ -8,14 +8,25 @@ import DisplayBoxComponent from './components/DisplayBoxComponent';
 import DisplayComponent from './components/DisplayComponent';
 import HeaderComponent from './components/HeaderComponent';
 // import SideBarComponent from './components/SideBarComponent';
+
+// Images for items
 import checkers from "./images/checkers.png";
 import resumePDF from "./Simon_Resume.pdf";
+import bitCoin from "./images/defender.png";
+import fitFlow from "./images/fitFlowHome.png";
+import mp3 from "./images/mp3Player.png";
+import ppal from "./images/ppal.png";
+//
 
 const desc1 = "A simple game of checkers created using react.";
-const desc2 ="An android game where you defend your graphics cards from bitcoin miners. Created using Java";
-const desc3 ="A Music player created with C# and the .Net framework";
-const desc4 = "A website created for CitroHacks 2023 that uses the OpenAI api to generate weekly plans for the user. I worked on the back-end communications for this project. Created using React, Flask, and Tailwind CSS.";
-const desc5 ="A website that allows users to search and save recipes. Users can sign up and keep their data. Worked on the user authentication between the client and server/database. Created using React, Flask, Tailwind, and MongoDB."
+
+const desc2 ="A Tower Defence android game where you protect your precious graphics cards from the bitcoin miners.";
+
+const desc3 ="A Music player application created with C# and the .Net framework. Select folders you wish to look for mp3 files and play them.";
+
+const desc4 = "A website created for CitroHacks 2023 that uses the OpenAI api to generate weekly plans for the user. I worked on the back-end communications for this project.";
+
+const desc5 ="A website that allows users to search and save recipes. Users can sign up and keep their list of saved recipes, and view them at any time. Worked on the user authentication between the client and server/database and the login/signup page. Created using React, Flask, Tailwind, and MongoDB."
 
 function App() {
 
@@ -43,6 +54,7 @@ function App() {
                         setMode={handleSetMode}/> */}
 
       {/* About Section */}  
+
       <div className={mode === 0? 'slideInDownItem' : 'slideOutItem'}>
         <AboutComponent/>
       </div>  
@@ -58,39 +70,57 @@ function App() {
             description={desc5} 
             gitLink="https://github.com/Jeffuz/Pantry-Pals"
             technologyUsed="React - Flask - MongoDB - Tailwind CSS"
-            image = {checkers}/>
+            image = {ppal}
+            isLiveLink = {false}/>
+
 
           <DisplayComponent 
             title="FitFlow" 
             description={desc4} 
-            gitLink="https://devpost.com/software/fitflow-pacuwy"
+            gitLink="https://github.com/Jeffuz/FitFlow"
             technologyUsed="React - Flask - MongoDB - Tailwind CSS"
-            image = {checkers}/>
+            image = {fitFlow}
+            isLiveLink = {true}
+            liveLink = "https://devpost.com/software/fitflow-pacuwy"/>
           
           <DisplayComponent
             title="Mp3 Player"
             description={desc3}
-            gitLink=""
+            gitLink="https://github.com/SaltMeister/Mp3Player"
             technologyUsed="C# - .Net - WPF"
-            image = {checkers}/>
+            image = {mp3}
+            isLiveLink = {false}/>
 
           <DisplayComponent
             title="Checkers"
             description={desc1}
-            gitLink=""
+            gitLink="https://github.com/SaltMeister/checkers"
             technologyUsed="React"
-            image = {checkers}/>
+            image = {checkers}
+            isLiveLink = {true}
+            liveLink="https://saltmeister.github.io/checkers/"
+            />
+
+          <DisplayComponent
+            title="Bitcoin Defender"
+            description={desc2}
+            gitLink=""
+            technologyUsed="Java - LibGDX"
+            image={bitCoin}
+            isLiveLink = {false}
+          />
             {/* 
-          <DisplayComponent title="Music Player" description={desc3} link="https://github.com/SaltMeister/Mp3Player"/>
           <DisplayComponent title="Checkers" description={desc1} link="https://saltmeister.github.io/checkers/" />
           <DisplayComponent title="Bitcoin Defenders" description={desc2} link="https://github.com/SaltMeister/BitcoinDefender"/> */}
         </DisplayBoxComponent>
+
         <div className="footer">
-        <p>All Rights Reserved © 2023</p>
+          <p>All Rights Reserved © 2023</p>
         </div>
+
       </div>
       
-      <div>
+      <div className={mode === 3? 'slideInDownItem' : 'slideOutItem'}>
         <ContactComponent/>
       </div>
 

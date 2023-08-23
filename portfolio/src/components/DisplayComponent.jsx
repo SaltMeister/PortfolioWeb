@@ -1,11 +1,15 @@
 import React, {useState} from 'react';
 import styles from "../css/Display.module.css";
+import { AiFillGithub, AiOutlineLink } from "react-icons/ai";
 
-export default function DisplayComponent({title, description, gitLink, projLink, image, technologyUsed}) {
+export default function DisplayComponent({title, description, gitLink, projLink, image, technologyUsed, isLiveLink, liveLink}) {
   
   const [isHover, setIsHover] = useState(false);
   const goToLink = (e) => {
     window.open(gitLink, "Null");
+  }
+  const goToLiveLink = (e) => {
+    window.open(liveLink, "Null");
   }
   const setFalse = () => {
     setIsHover(false);
@@ -14,7 +18,7 @@ export default function DisplayComponent({title, description, gitLink, projLink,
     setIsHover(true);
   }
   return(
-    <div className={styles.displayItem} onClick={goToLink}
+    <div className={styles.displayItem}
         onMouseEnter={setTrue} onMouseLeave={setFalse}>
 
 
@@ -24,7 +28,11 @@ export default function DisplayComponent({title, description, gitLink, projLink,
           <h3 className={styles.title}>{title}</h3>
           <p className={styles.text}>{description}</p>
           <p className={styles.technologyItems}>{technologyUsed}</p>
-          <p className={styles.icon}>Github - Link</p>
+          <p className={styles.icon}>
+            <span onClick={goToLink}> <AiFillGithub size={60} className={styles.linkIcons}/> </span> 
+            {isLiveLink? <span onClick={goToLiveLink}><AiOutlineLink size={60} className={styles.linkIcons}/></span> : null}
+          </p>
+
         </div>
 
         <div className={styles.imageContent}>

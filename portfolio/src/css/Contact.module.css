@@ -1,0 +1,32 @@
+.container {
+  display: block;
+  text-align: left;
+  max-width: 90vw;
+  margin: 5vw;
+  padding: 3rem 5vw 3rem 5vw;
+}
+.title {
+  font-size: calc(15px + 2vw);
+}
+
+.button {
+  font-size: 35px;
+  color: white;
+  background-color: lightblue;
+  border-radius: 5%;
+  padding: 1rem 2rem 1rem 2rem;
+  align-self: flex-start;
+  margin: auto;
+}
+.icon {
+  padding: 3rem;
+  margin: auto;
+}
+.contactBox {
+  padding: 2rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  justify-content: space-between;
+  display: flex;
+  border: dashed blue 1px;
+}
