@@ -28,6 +28,7 @@ const desc4 = "A website created for CitroHacks 2023 that uses the OpenAI api to
 
 const desc5 ="A website that allows users to search and save recipes. Users can sign up and keep their list of saved recipes, and view them at any time. Worked on the user authentication between the client and server/database and the login/signup page. Created using React, Flask, Tailwind, and MongoDB."
 
+const eduDesc = "A used item selling website built to help students find items that other students no longer need. Users can sell or give away their old school supplies to others in the local area. Users can search and filter their interests by location and communicate through live chatting to confirm their meetup location."
 function App() {
 
   const [mode, setMode] = useState(0);
@@ -65,48 +66,57 @@ function App() {
       {/* Project Section */}
       <div className={mode === 1? 'slideUpDelayedItem' : 'slideDownDelayedItem'}>
         <DisplayBoxComponent>
+          <DisplayComponent
+            title = "EduTrade"
+            description = {eduDesc}
+            gitLink = "https://github.com/Jeffuz/EduTrade"
+            technologyUsed="React - Firebase/Firestore - Tailwind CSS"
+            images = {[]}
+            isLiveLink = {true}
+            liveLink = "https://jeffuz.github.io/EduTrade/"
+          />
           <DisplayComponent 
-            title="Pantry Pal" 
-            description={desc5} 
-            gitLink="https://github.com/Jeffuz/Pantry-Pals"
-            technologyUsed="React - Flask - MongoDB - Tailwind CSS"
-            image = {ppal}
+            title = "Pantry Pal" 
+            description = {desc5} 
+            gitLink = "https://github.com/Jeffuz/Pantry-Pals"
+            technologyUsed = "React - Flask - MongoDB - Tailwind CSS"
+            images = {[ppal]}
             isLiveLink = {false}/>
 
 
           <DisplayComponent 
-            title="FitFlow" 
-            description={desc4} 
-            gitLink="https://github.com/Jeffuz/FitFlow"
-            technologyUsed="React - Flask - MongoDB - Tailwind CSS"
-            image = {fitFlow}
+            title = "FitFlow" 
+            description = {desc4} 
+            gitLink = "https://github.com/Jeffuz/FitFlow"
+            technologyUsed  ="React - Flask - MongoDB - Tailwind CSS"
+            images = {[fitFlow, checkers]}
             isLiveLink = {true}
             liveLink = "https://devpost.com/software/fitflow-pacuwy"/>
           
           <DisplayComponent
-            title="Mp3 Player"
-            description={desc3}
-            gitLink="https://github.com/SaltMeister/Mp3Player"
+            title = "Mp3 Player"
+            description = {desc3}
+            gitLink = "https://github.com/SaltMeister/Mp3Player"
             technologyUsed="C# - .Net - WPF"
-            image = {mp3}
+            images = {[mp3]}
             isLiveLink = {false}/>
 
           <DisplayComponent
-            title="Checkers"
-            description={desc1}
-            gitLink="https://github.com/SaltMeister/checkers"
-            technologyUsed="React"
-            image = {checkers}
+            title = "Checkers"
+            description = {desc1}
+            gitLink = "https://github.com/SaltMeister/checkers"
+            technologyUsed = "React"
+            images = {[checkers]}
             isLiveLink = {true}
-            liveLink="https://saltmeister.github.io/checkers/"
+            liveLink = "https://saltmeister.github.io/checkers/"
             />
 
           <DisplayComponent
-            title="Bitcoin Defender"
-            description={desc2}
-            gitLink=""
-            technologyUsed="Java - LibGDX"
-            image={bitCoin}
+            title = "Bitcoin Defender"
+            description = {desc2}
+            gitLink = ""
+            technologyUsed = "Java - LibGDX"
+            images = {[bitCoin]}
             isLiveLink = {false}
           />
             {/* 

@@ -1,8 +1,9 @@
 import React, {useState} from 'react';
 import styles from "../css/Display.module.css";
 import { AiFillGithub, AiOutlineLink } from "react-icons/ai";
+import ImageDisplay from "./ImageDisplay.jsx";
 
-export default function DisplayComponent({title, description, gitLink, projLink, image, technologyUsed, isLiveLink, liveLink}) {
+export default function DisplayComponent({title, description, gitLink, images, technologyUsed, isLiveLink, liveLink}) {
   
   const [isHover, setIsHover] = useState(false);
   const [iconSize, setIconSize] = useState(60);
@@ -40,7 +41,8 @@ export default function DisplayComponent({title, description, gitLink, projLink,
         </div>
 
         <div className={styles.imageContent}>
-          <img src={image} alt="text"/>        
+          <ImageDisplay imageList = {images}/>
+          {/* <img src={image} alt="text"/>         */}
         </div> 
                
       </div>

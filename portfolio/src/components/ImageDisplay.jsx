@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { AiOutlineArrowRight, AiOutlineArrowLeft } from "react-icons/ai";
-
+import styles from "../css/ImageDisplay.module.css";
 
 const ImageDisplay = ({ imageList }) => {
   const [index, setIndex] = useState(0);
@@ -16,28 +16,28 @@ const ImageDisplay = ({ imageList }) => {
   }
 
   return (
-    <div className="flex items-center justify-center">
+    <div className={styles.wrapper}>
       {imageList.length > 0 && index > 0 && (
         <button
-          className="bg-green-100 rounded-full p-2 hover:bg-green-50 transition-all duration-100 transform translate-x-[-1rem]"
+          className={`${styles.leftButton} ${styles.button}`}
           onClick={() => setImageIndex(-1)}
         >
-          <AiOutlineArrowLeft />
+          <AiOutlineArrowLeft size={50} />
         </button>
       )}
 
       <img
-        className="h-[90%] w-[90%] aspect-square object-cover"
         src={imageList[index]}
-        alt={`Image ${index + 1}`}
+        alt=' '
       />
 
       {imageList.length > 0 && index < imageList.length - 1 && (
         <button
-          className="bg-green-100 rounded-full p-2 hover:bg-green-50 transition-all duration-100 transform translate-x-[1rem]"
+          className={`${styles.rightButton} ${styles.button}`}
           onClick={() => setImageIndex(1)}
         >
-          <AiOutlineArrowRight />
+
+          <AiOutlineArrowRight size={50}/> 
         </button>
       )}
     </div>

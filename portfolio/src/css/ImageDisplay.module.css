@@ -1,0 +1,51 @@
+.wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.button {
+  background-color: transparent;
+  position: absolute;
+
+  height: 100%;
+  opacity: 15%;
+  border: none;
+  transition: all 500ms;
+}
+.button:hover {
+  color: #00ADB5;
+  opacity: 75%;
+}
+
+.leftButton {
+  left: 5%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+.rightButton {
+  right: 5%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+img {
+  aspect-ratio: auto;
+  max-height: 500px;
+  max-width: 90%;
+  object-fit: scale-down;
+  height: auto;
+  width: auto;
+  /* box-shadow: 0px 0px 15px #A1CCD1; */
+}
+
+img::before {
+  display: flex;
+  justify-content: center;
+  content: "Image broken / Missing";
+  padding-top: 45%;
+  padding-bottom: 0px;
+  display: block;
+  margin-bottom: 10px;
+
+  height: 100%;
+  width: 100%
+}
