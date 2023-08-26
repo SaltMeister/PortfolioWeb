@@ -75,78 +75,81 @@ function App() {
       
 
 
-      
-      {/* Project Section */}
-      <div className={mode === 1? 'slideUpDelayedItem' : 'slideDownDelayedItem'}>
-        <DisplayBoxComponent>
-          <DisplayComponent
-            title = "EduTrade"
-            description = {eduDesc}
-            gitLink = "https://github.com/Jeffuz/EduTrade"
-            technologyUsed="React - Firebase/Firestore - Tailwind CSS"
-            images = {[eduTrade1, eduTrade2, eduTrade3, eduTrade4, eduTrade5]}
-            isLiveLink = {true}
-            liveLink = "https://jeffuz.github.io/EduTrade/"
-          />
-          <DisplayComponent 
-            title = "Pantry Pal" 
-            description = {desc5} 
-            gitLink = "https://github.com/Jeffuz/Pantry-Pals"
-            technologyUsed = "React - Flask - MongoDB - Tailwind CSS"
-            images = {[ppal]}
-            isLiveLink = {false}/>
-
-
-          <DisplayComponent 
-            title = "FitFlow" 
-            description = {desc4} 
-            gitLink = "https://github.com/Jeffuz/FitFlow"
-            technologyUsed  ="React - Flask - MongoDB - Tailwind CSS"
-            images = {[fitFlow, fitFlow2, fitFlow3]}
-            isLiveLink = {true}
-            liveLink = "https://devpost.com/software/fitflow-pacuwy"/>
-          
-          <DisplayComponent
-            title = "Mp3 Player"
-            description = {desc3}
-            gitLink = "https://github.com/SaltMeister/Mp3Player"
-            technologyUsed="C# - .Net - WPF"
-            images = {[mp3]}
-            isLiveLink = {false}/>
-
-          <DisplayComponent
-            title = "Checkers"
-            description = {desc1}
-            gitLink = "https://github.com/SaltMeister/checkers"
-            technologyUsed = "React"
-            images = {[checkers1, checkers2, checkers]}
-            isLiveLink = {true}
-            liveLink = "https://saltmeister.github.io/checkers/"
+      <div className="fadeIn">
+  {/* Project Section */}
+        <div className={mode === 1? 'slideUpDelayedItem' : 'slideDownDelayedItem'}>
+          <DisplayBoxComponent>
+            <DisplayComponent
+              title = "EduTrade"
+              description = {eduDesc}
+              gitLink = "https://github.com/Jeffuz/EduTrade"
+              technologyUsed="React - Firebase/Firestore - Tailwind CSS"
+              images = {[eduTrade1, eduTrade2, eduTrade3, eduTrade4, eduTrade5]}
+              isLiveLink = {true}
+              liveLink = "https://jeffuz.github.io/EduTrade/"
             />
+            <DisplayComponent 
+              title = "Pantry Pal" 
+              description = {desc5} 
+              gitLink = "https://github.com/Jeffuz/Pantry-Pals"
+              technologyUsed = "React - Flask - MongoDB - Tailwind CSS"
+              images = {[ppal]}
+              isLiveLink = {false}/>
 
-          <DisplayComponent
-            title = "Bitcoin Defender"
-            description = {desc2}
-            gitLink = ""
-            technologyUsed = "Java - LibGDX"
-            images = {[bitCoin]}
-            isLiveLink = {false}
-          />
-            {/* 
-          <DisplayComponent title="Checkers" description={desc1} link="https://saltmeister.github.io/checkers/" />
-          <DisplayComponent title="Bitcoin Defenders" description={desc2} link="https://github.com/SaltMeister/BitcoinDefender"/> */}
-        </DisplayBoxComponent>
 
-        <div className="footer">
-          <p>All Rights Reserved © 2023</p>
+            <DisplayComponent 
+              title = "FitFlow" 
+              description = {desc4} 
+              gitLink = "https://github.com/Jeffuz/FitFlow"
+              technologyUsed  ="React - Flask - MongoDB - Tailwind CSS"
+              images = {[fitFlow, fitFlow2, fitFlow3]}
+              isLiveLink = {true}
+              liveLink = "https://devpost.com/software/fitflow-pacuwy"/>
+            
+            <DisplayComponent
+              title = "Mp3 Player"
+              description = {desc3}
+              gitLink = "https://github.com/SaltMeister/Mp3Player"
+              technologyUsed="C# - .Net - WPF"
+              images = {[mp3]}
+              isLiveLink = {false}/>
+
+            <DisplayComponent
+              title = "Checkers"
+              description = {desc1}
+              gitLink = "https://github.com/SaltMeister/checkers"
+              technologyUsed = "React"
+              images = {[checkers1, checkers2, checkers]}
+              isLiveLink = {true}
+              liveLink = "https://saltmeister.github.io/checkers/"
+              />
+
+            <DisplayComponent
+              title = "Bitcoin Defender"
+              description = {desc2}
+              gitLink = ""
+              technologyUsed = "Java - LibGDX"
+              images = {[bitCoin]}
+              isLiveLink = {false}
+            />
+              {/* 
+            <DisplayComponent title="Checkers" description={desc1} link="https://saltmeister.github.io/checkers/" />
+            <DisplayComponent title="Bitcoin Defenders" description={desc2} link="https://github.com/SaltMeister/BitcoinDefender"/> */}
+          </DisplayBoxComponent>
+
+          <div className="footer">
+            <p>All Rights Reserved © 2023</p>
+          </div>
+
+        </div>
+        
+        <div className={mode === 3? 'slideInDownItem' : 'slideOutItem'}>
+          <ContactComponent/>
         </div>
 
+
       </div>
       
-      <div className={mode === 3? 'slideInDownItem' : 'slideOutItem'}>
-        <ContactComponent/>
-      </div>
-
 
     </div>
   );

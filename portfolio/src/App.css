@@ -85,3 +85,19 @@ body {
     display: none;
   }
 }
+
+.fadeIn 
+{
+  animation: fade 1s;
+}
+@keyframes fade {
+  0% {
+    opacity: 0%;
+  }
+  90% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
