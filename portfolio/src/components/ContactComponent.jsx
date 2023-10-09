@@ -13,7 +13,7 @@ export default function ContactComponent() {
   return (
     <div className={styles.container}>
       <h3 className={styles.title}>Contact Me</h3>
-      <p>If you want to talk for say hello, lets connect on LinkedIn or send me an Email.</p>
+      <p>If you want to talk or say hello, lets connect on LinkedIn or send me an Email.</p>
 
       <div className={styles.contactBox}>
         <button className={styles.button} onClick={sendEmail}>Email</button>
