@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "../css/About.module.css";
-import profile from "../images/profile.jpg";
 
 export default function AboutComponent() {
   return(
@@ -18,10 +17,6 @@ export default function AboutComponent() {
           <p className={styles.text}>Outside, you can find me hiking, learning new skills,
             or playing games with friends.
           </p>          
-        </div>
-
-        <div className={styles.imageBox}>
-          <img src={profile} className={styles.image} alt="Profile"/>  
         </div>
       </div>
 

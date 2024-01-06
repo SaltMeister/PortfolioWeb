@@ -29,6 +29,11 @@ import eduTrade2 from "./images/eduTrade2.png";
 import eduTrade3 from "./images/eduTrade3.png";
 import eduTrade4 from "./images/eduTrade4.png";
 import eduTrade5 from "./images/eduTrade5.png";
+
+import rental1 from "./images/rental1.PNG"
+import rental2 from "./images/rental2.PNG"
+import rental3 from "./images/rental3.PNG"
+
 //
 
 const desc1 = "A simple game of checkers created using react.";
@@ -42,6 +47,8 @@ const desc4 = "A website created for CitroHacks 2023 that uses the OpenAI api to
 const desc5 ="A website that allows users to search and save recipes. Users can sign up and keep their list of saved recipes, and view them at any time. I worked on the user authentication between the client and server/database and the login/signup page."
 
 const eduDesc = ["A used item selling website built to help students find items that other students no longer need. Users can sell or give away their old school supplies to others in the local area. Users can search and filter their interests by location and communicate through live chatting to confirm their meetup location.", <br />, "I developed the database communication from the client, the search query and location filters, and the front end for the item displays for each listing."]
+const rentABikeDesc = "A bike rental site that allows users to rent out bikes from a list of available bikes. Users can rent out 1 bike at a time and must be registered to do so. The website communicates with a backend api to get user authentication and the ability to view listed bikes to rent out."
+
 function App() {
 
   const [mode, setMode] = useState(0);
@@ -79,6 +86,15 @@ function App() {
   {/* Project Section */}
         <div className={mode === 1? 'slideUpDelayedItem' : 'slideDownDelayedItem'}>
           <DisplayBoxComponent>
+            <DisplayComponent
+              title = "RentABike"
+              description = {rentABikeDesc}
+              gitLink = "https://github.com/SaltMeister/BikeRentalSite"
+              technologyUsed="React - Flask - Tailwind CSS - MongoDB"
+              images = {[rental1, rental2, rental3]}
+              isLiveLink = {false}
+              liveLink = ""
+            />
             <DisplayComponent
               title = "EduTrade"
               description = {eduDesc}

@@ -13,14 +13,17 @@
 }
 
 .header {
-  transition: all 200ms;
+  transition: background-color 200ms;
   font-size: calc(0.5rem + 1vw);
   padding: 2rem;
   background-color: transparent;
   border: none;
 }
 .header:hover {
-  -webkit-filter: brightness(50%);
+  background-color: #00ADB5;
+}
+.header:active{
+  -webkit-filter: brightness(75%); 
 }
 .leftItems {
   margin-left: 2rem;
