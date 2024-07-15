@@ -48,7 +48,7 @@ const desc5 ="A website that allows users to search and save recipes. Users can 
 
 const eduDesc = ["A used item selling website built to help students find items that other students no longer need. Users can sell or give away their old school supplies to others in the local area. Users can search and filter their interests by location and communicate through live chatting to confirm their meetup location.", <br />, "I developed the database communication from the client, the search query and location filters, and the front end for the item displays for each listing."]
 const rentABikeDesc = "A bike rental site that allows users to rent out bikes from a list of available bikes. Users can rent out 1 bike at a time and must be registered to do so. The website communicates with a backend api to get user authentication and the ability to view listed bikes to rent out."
-
+const codeReviewDescription = ""
 function App() {
 
   const [mode, setMode] = useState(0);
@@ -69,12 +69,6 @@ function App() {
       <header>
         <HeaderComponent headerText="Simon Huang" arrayOfHeaders={["Home", "Projects", "Resume", "Contact"]} setMode={handleSetMode}/>
       </header>
-        
-      {/* <SideBarComponent arrayOfHeaders={["Home", "Projects", "Resume"]} 
-                        arrayOfImages={["images/home.png", "images/projects.png", "images/resume.png"]} 
-                        setMode={handleSetMode}/> */}
-
-      {/* About Section */}  
 
       <div className={mode === 0? 'slideInDownItem' : 'slideOutItem'}>
         <AboutComponent/>
@@ -86,6 +80,16 @@ function App() {
   {/* Project Section */}
         <div className={mode === 1? 'slideUpDelayedItem' : 'slideDownDelayedItem'}>
           <DisplayBoxComponent>
+
+            <DisplayComponent
+              title = "Code Review Website"
+              description = {desc2}
+              gitLink = ""
+              technologyUsed = "Java - LibGDX"
+              images = {[bitCoin]}
+              isLiveLink = {false}
+            />
+              
             <DisplayComponent
               title = "RentABike"
               description = {rentABikeDesc}
@@ -148,9 +152,6 @@ function App() {
               images = {[bitCoin]}
               isLiveLink = {false}
             />
-              {/* 
-            <DisplayComponent title="Checkers" description={desc1} link="https://saltmeister.github.io/checkers/" />
-            <DisplayComponent title="Bitcoin Defenders" description={desc2} link="https://github.com/SaltMeister/BitcoinDefender"/> */}
           </DisplayBoxComponent>
 
           <div className="footer">
