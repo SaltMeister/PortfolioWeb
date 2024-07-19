@@ -92,7 +92,7 @@ function App() {
               title = "Code Review Webtool"
               description = {codeReviewDescription}
               gitLink = "https://github.com/fnkzhang/codereview"
-              technologyUsed = "React - Flask - Tailwind CSS - MySql - Google Buckets - Google Cloud SQL - Docker - NGinX - Jest"
+              technologyUsed = "React - Flask - Tailwind CSS - MySql - Google Buckets - Google Cloud SQL - Google Vertex AI - Docker - NGinX - Jest"
               images = {[codeReview1, codeReview3, codeReview2]}
               isLiveLink = {true}
               liveLink= "https://franktest1-alz74memjq-wl.a.run.app/"
