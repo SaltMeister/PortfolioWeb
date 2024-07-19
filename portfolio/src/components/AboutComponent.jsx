@@ -9,12 +9,12 @@ export default function AboutComponent() {
 
       <div className={styles.contentBox}>
         <div className={styles.textBox}>
-          <p className={styles.text}>I am a 4th year student studying Computer Science at 
+          <p className={styles.text}>I am a recent Computer Science from 
             <span className={styles.highlight}> UC Davis</span>. I am a motivated individual
-            looking to develop my skills developing front-end and back-end applications.
+            looking to apply my skills developing Full-Stack applications.
           </p>
           
-          <p className={styles.text}>Outside, you can find me hiking, learning new skills,
+          <p className={styles.text}>Outside, you can find me hiking, gardening,
             or playing games with friends.
           </p>          
         </div>

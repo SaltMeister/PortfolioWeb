@@ -10,6 +10,13 @@ import HeaderComponent from './components/HeaderComponent';
 // import SideBarComponent from './components/SideBarComponent';
 
 // Images for items
+
+import codeReview1 from "./images/codeReview1.PNG"
+import codeReview2 from "./images/codeReview2.PNG"
+import codeReview3 from "./images/codeReview3.PNG"
+
+
+
 import checkers from "./images/checkers.png";
 import checkers1 from "./images/checkers1.png";
 import checkers2 from "./images/checkers2.png";
@@ -34,6 +41,7 @@ import rental1 from "./images/rental1.PNG"
 import rental2 from "./images/rental2.PNG"
 import rental3 from "./images/rental3.PNG"
 
+
 //
 
 const desc1 = "A simple game of checkers created using react.";
@@ -48,13 +56,12 @@ const desc5 ="A website that allows users to search and save recipes. Users can 
 
 const eduDesc = ["A used item selling website built to help students find items that other students no longer need. Users can sell or give away their old school supplies to others in the local area. Users can search and filter their interests by location and communicate through live chatting to confirm their meetup location.", <br />, "I developed the database communication from the client, the search query and location filters, and the front end for the item displays for each listing."]
 const rentABikeDesc = "A bike rental site that allows users to rent out bikes from a list of available bikes. Users can rent out 1 bike at a time and must be registered to do so. The website communicates with a backend api to get user authentication and the ability to view listed bikes to rent out."
-const codeReviewDescription = ""
+const codeReviewDescription = "A webtool that allows teams to perform the code review process online. Users can upload their changes files locally, but can also import their branch from github and push the reviewed changes back into github. This was a group project under the mentorship of a senior Google employee. I worked on the Full-Stack, establishing cloud database, and some prompt engineering for our LLM."
 function App() {
 
   const [mode, setMode] = useState(0);
   
   const handleSetMode = (value) => {
-    console.log(value);
     if(value === 2)
     {
       value = 1;
@@ -82,12 +89,13 @@ function App() {
           <DisplayBoxComponent>
 
             <DisplayComponent
-              title = "Code Review Website"
-              description = {desc2}
-              gitLink = ""
-              technologyUsed = "Java - LibGDX"
-              images = {[bitCoin]}
-              isLiveLink = {false}
+              title = "Code Review Webtool"
+              description = {codeReviewDescription}
+              gitLink = "https://github.com/fnkzhang/codereview"
+              technologyUsed = "React - Flask - Tailwind CSS - MySql - Google Buckets - Google Cloud SQL - Docker - NGinX - Jest"
+              images = {[codeReview1, codeReview3, codeReview2]}
+              isLiveLink = {true}
+              liveLink= "https://franktest1-alz74memjq-wl.a.run.app/"
             />
               
             <DisplayComponent

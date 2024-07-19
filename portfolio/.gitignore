@@ -7,7 +7,7 @@
 
 # testing
 /coverage
-../docker
+
 # production
 /build
 
