@@ -163,7 +163,7 @@ function App() {
           </DisplayBoxComponent>
 
           <div className="footer">
-            <p>All Rights Reserved © 2023</p>
+            <p>All Rights Reserved © 2024</p>
           </div>
 
         </div>
