@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/PortfolioWeb/static/css/main.c9273480.css",
-    "main.js": "/PortfolioWeb/static/js/main.ac20d4c5.js",
+    "main.js": "/PortfolioWeb/static/js/main.21f60255.js",
     "static/js/787.1ed0c42c.chunk.js": "/PortfolioWeb/static/js/787.1ed0c42c.chunk.js",
     "static/media/ppal.png": "/PortfolioWeb/static/media/ppal.8ccc8ba19d4dfe221e62.png",
     "static/media/rental1.PNG": "/PortfolioWeb/static/media/rental1.4cd256ecfc6290bee181.PNG",
@@ -13,21 +13,24 @@
     "static/media/fitFlow2.png": "/PortfolioWeb/static/media/fitFlow2.3d85305cfce190e9fedd.png",
     "static/media/eduTrade1.png": "/PortfolioWeb/static/media/eduTrade1.f8321f53a77dbfa914c5.png",
     "static/media/mp3Player.png": "/PortfolioWeb/static/media/mp3Player.6a2f4f221ec86ae3dfe5.png",
-    "static/media/Simon_Resume.pdf": "/PortfolioWeb/static/media/Simon_Resume.b56afc7904d92164eb6f.pdf",
+    "static/media/Simon_Resume.pdf": "/PortfolioWeb/static/media/Simon_Resume.4ca32463bdf42d03c80a.pdf",
     "static/media/checkers.png": "/PortfolioWeb/static/media/checkers.2fcb19ac095d760bb078.png",
     "static/media/checkers2.png": "/PortfolioWeb/static/media/checkers2.7efe836b10894895a561.png",
     "static/media/checkers1.png": "/PortfolioWeb/static/media/checkers1.04760a030652a0681ae9.png",
     "static/media/rental3.PNG": "/PortfolioWeb/static/media/rental3.5701c9538a47de0a3ac8.PNG",
+    "static/media/codeReview3.PNG": "/PortfolioWeb/static/media/codeReview3.fff50effbc1d89732598.PNG",
     "static/media/fitFlow3.png": "/PortfolioWeb/static/media/fitFlow3.c59a79847758ed8e602d.png",
+    "static/media/codeReview1.PNG": "/PortfolioWeb/static/media/codeReview1.2e1464ef942180db2bb6.PNG",
+    "static/media/codeReview2.PNG": "/PortfolioWeb/static/media/codeReview2.d842436fa4c13871627f.PNG",
     "static/media/rental2.PNG": "/PortfolioWeb/static/media/rental2.f819010076a63e002cbf.PNG",
     "static/media/eduTrade4.png": "/PortfolioWeb/static/media/eduTrade4.011eeb1b340000fafbdd.png",
     "index.html": "/PortfolioWeb/index.html",
     "main.c9273480.css.map": "/PortfolioWeb/static/css/main.c9273480.css.map",
-    "main.ac20d4c5.js.map": "/PortfolioWeb/static/js/main.ac20d4c5.js.map",
+    "main.21f60255.js.map": "/PortfolioWeb/static/js/main.21f60255.js.map",
     "787.1ed0c42c.chunk.js.map": "/PortfolioWeb/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c9273480.css",
-    "static/js/main.ac20d4c5.js"
+    "static/js/main.21f60255.js"
   ]
 }
