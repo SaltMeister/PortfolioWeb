@@ -1,14 +1,9 @@
-import React, {useState} from 'react';
+import React from 'react';
 import styles from "../css/Display.module.css";
 import { AiFillGithub, AiOutlineLink } from "react-icons/ai";
 import ImageDisplay from "./ImageDisplay.jsx";
 
 export default function DisplayComponent({title, description, gitLink, images, technologyUsed, isLiveLink, liveLink}) {
-  
-  const [isHover, setIsHover] = useState(false);
-  const [iconSize, setIconSize] = useState(60);
-
-  
 
   const goToLink = (e) => {
     window.open(gitLink, "Null");
@@ -16,15 +11,9 @@ export default function DisplayComponent({title, description, gitLink, images, t
   const goToLiveLink = (e) => {
     window.open(liveLink, "Null");
   }
-  const setFalse = () => {
-    setIsHover(false);
-  }
-  const setTrue = () => {
-    setIsHover(true);
-  }
+
   return(
-    <div className={styles.displayItem}
-        onMouseEnter={setTrue} onMouseLeave={setFalse}>
+    <div className={styles.displayItem}>
 
 
       <div className={styles.content}>
