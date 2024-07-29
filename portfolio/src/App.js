@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './App.css';
 
 
@@ -7,7 +7,6 @@ import ContactComponent from './components/ContactComponent';
 import DisplayBoxComponent from './components/DisplayBoxComponent';
 import DisplayComponent from './components/DisplayComponent';
 import HeaderComponent from './components/HeaderComponent';
-// import SideBarComponent from './components/SideBarComponent';
 
 // Images for items
 
@@ -21,7 +20,6 @@ import checkers from "./images/checkers.png";
 import checkers1 from "./images/checkers1.png";
 import checkers2 from "./images/checkers2.png";
 
-import resumePDF from "./Simon_Resume.pdf";
 import bitCoin from "./images/defender.png";
 
 import fitFlow from "./images/fitFlowHome.png";
@@ -40,10 +38,6 @@ import eduTrade5 from "./images/eduTrade5.png";
 import rental1 from "./images/rental1.PNG"
 import rental2 from "./images/rental2.PNG"
 import rental3 from "./images/rental3.PNG"
-import SlideInDisplayComponent from './components/SlideInDisplayComponent';
-
-
-//
 
 const desc1 = "A simple game of checkers created using react.";
 
