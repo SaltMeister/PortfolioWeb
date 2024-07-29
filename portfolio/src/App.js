@@ -40,6 +40,7 @@ import eduTrade5 from "./images/eduTrade5.png";
 import rental1 from "./images/rental1.PNG"
 import rental2 from "./images/rental2.PNG"
 import rental3 from "./images/rental3.PNG"
+import SlideInDisplayComponent from './components/SlideInDisplayComponent';
 
 
 //
@@ -57,35 +58,20 @@ const desc5 ="A website that allows users to search and save recipes. Users can 
 const eduDesc = ["A used item selling website built to help students find items that other students no longer need. Users can sell or give away their old school supplies to others in the local area. Users can search and filter their interests by location and communicate through live chatting to confirm their meetup location.", <br />, "I developed the database communication from the client, the search query and location filters, and the front end for the item displays for each listing."]
 const rentABikeDesc = "A bike rental site that allows users to rent out bikes from a list of available bikes. Users can rent out 1 bike at a time and must be registered to do so. The website communicates with a backend api to get user authentication and the ability to view listed bikes to rent out."
 const codeReviewDescription = "A webtool that allows teams to perform the code review process online. Users can upload their changes files locally, but can also import their branch from github and push the reviewed changes back into github. This was a group project under the mentorship of a senior Google employee. I worked on the Full-Stack, establishing cloud database, and some prompt engineering for our LLM."
-function App() {
 
-  const [mode, setMode] = useState(0);
-  
-  const handleSetMode = (value) => {
-    if(value === 2)
-    {
-      value = 1;
-      // Open Resume file
-      window.open(resumePDF);
-    }  
-    
-    setMode(value);
-  }
+function App() {
   return (
     <div className="App">
       <header>
-        <HeaderComponent headerText="Simon Huang" arrayOfHeaders={["Home", "Projects", "Resume", "Contact"]} setMode={handleSetMode}/>
+        <HeaderComponent headerText="Simon Huang" arrayOfHeaders={["Home", "Projects", "Resume", "Contact"]}/>
       </header>
+      <section>
+        <div id="Home">
+          <AboutComponent/>          
+        </div>
 
-      <div className={mode === 0? 'slideInDownItem' : 'slideOutItem'}>
-        <AboutComponent/>
-      </div>  
-      
-
-
-      <div className="fadeIn">
-  {/* Project Section */}
-        <div className={mode === 1? 'slideUpDelayedItem' : 'slideDownDelayedItem'}>
+        {/* Project Section */}
+        <div className='Projects' id="Projects" >
           <DisplayBoxComponent>
 
             <DisplayComponent
@@ -96,6 +82,7 @@ function App() {
               images = {[codeReview1, codeReview3, codeReview2]}
               isLiveLink = {true}
               liveLink= "https://franktest1-alz74memjq-wl.a.run.app/"
+              direction="right"
             />
               
             <DisplayComponent
@@ -106,6 +93,7 @@ function App() {
               images = {[rental1, rental2, rental3]}
               isLiveLink = {false}
               liveLink = ""
+              direction="left"
             />
             <DisplayComponent
               title = "EduTrade"
@@ -115,6 +103,7 @@ function App() {
               images = {[eduTrade1, eduTrade2, eduTrade3, eduTrade4, eduTrade5]}
               isLiveLink = {true}
               liveLink = "https://jeffuz.github.io/EduTrade/"
+              direction="right"
             />
             <DisplayComponent 
               title = "Pantry Pal" 
@@ -122,7 +111,10 @@ function App() {
               gitLink = "https://github.com/Jeffuz/Pantry-Pals"
               technologyUsed = "React - Flask - MongoDB - Tailwind CSS"
               images = {[ppal]}
-              isLiveLink = {false}/>
+              isLiveLink = {false}
+              liveLink=""
+              direction="left"
+              />
 
 
             <DisplayComponent 
@@ -132,7 +124,9 @@ function App() {
               technologyUsed  ="React - Flask - MongoDB - Tailwind CSS"
               images = {[fitFlow, fitFlow2, fitFlow3]}
               isLiveLink = {true}
-              liveLink = "https://devpost.com/software/fitflow-pacuwy"/>
+              liveLink = "https://devpost.com/software/fitflow-pacuwy"
+              direction="right"
+              />
             
             <DisplayComponent
               title = "Mp3 Player"
@@ -140,7 +134,9 @@ function App() {
               gitLink = "https://github.com/SaltMeister/Mp3Player"
               technologyUsed="C# - .Net - WPF"
               images = {[mp3]}
-              isLiveLink = {false}/>
+              isLiveLink = {false}
+              liveLink=""
+              direction="left"/>
 
             <DisplayComponent
               title = "Checkers"
@@ -150,6 +146,7 @@ function App() {
               images = {[checkers1, checkers2, checkers]}
               isLiveLink = {true}
               liveLink = "https://saltmeister.github.io/checkers/"
+              direction="right"
               />
 
             <DisplayComponent
@@ -159,23 +156,20 @@ function App() {
               technologyUsed = "Java - LibGDX"
               images = {[bitCoin]}
               isLiveLink = {false}
+              liveLink=""
+              direction="left"
             />
           </DisplayBoxComponent>
-
-          <div className="footer">
-            <p>All Rights Reserved © 2024</p>
-          </div>
-
         </div>
-        
-        <div className={mode === 3? 'slideInDownItem' : 'slideOutItem'}>
+
+        <div className='Contact' id="Contact">
           <ContactComponent/>
         </div>
-
-
-      </div>
-      
-
+      </section>
+     
+      <footer className="footer">
+        <p>All Rights Reserved Simon Huang © 2024</p>
+      </footer>
     </div>
   );
 }

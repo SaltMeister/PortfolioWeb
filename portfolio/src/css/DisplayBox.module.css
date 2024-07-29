@@ -4,7 +4,6 @@
   padding-top: 2rem;
   padding-bottom: 2rem;
   border-radius: 1%;
-  animation: fadeIn 700ms;
 }
 .children {
   margin: auto;
@@ -12,11 +11,8 @@
   flex-flow: column wrap;
 
 }
-.header {
-  margin: 0px;
+.header { 
   font-size: calc(15px + 1.5vw);
-}
-@keyframes fadeIn {
-  from { opacity: 15%;}
-  to {opacity: 100%; }
+  padding: 2rem;
+  padding-bottom: 4rem;
 }

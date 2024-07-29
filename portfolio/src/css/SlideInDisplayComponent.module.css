@@ -1,0 +1,33 @@
+
+.block {
+  display: block;
+}
+.hidden {
+  display: none;
+}
+
+.slideFromRightBox {
+  animation: slideFromRight 1.5s;
+
+}
+
+.slideFromLeftBox {
+  animation: slideFromLeft 1.5s;
+
+}
+
+
+
+@keyframes slideFromRight {
+  from {transform: translateX(50%)}
+
+  to {transform: translateX(0%)}
+
+}
+
+@keyframes slideFromLeft {
+  from {transform: translateX(-50%)}
+
+  to {transform: translateX(0%)}
+
+}

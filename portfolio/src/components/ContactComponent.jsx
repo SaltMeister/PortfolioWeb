@@ -19,7 +19,7 @@ export default function ContactComponent() {
         <button className={styles.button} onClick={sendEmail}>Email</button>
 
         <div className={styles.icon} onClick={goLI}>
-          <SiLinkedin  size={70}/>
+          <SiLinkedin  size={50}/>
         </div>        
       </div>
 

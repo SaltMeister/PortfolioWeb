@@ -2,6 +2,7 @@
   display: block;
   padding: 2rem;
   padding-bottom: 4rem;
+  padding-top: 4rem;
 }
 
 .content {
@@ -45,4 +46,31 @@
 }
 .linkIcons:hover {
   color: darkblue;
+}
+
+.slideFromRightBox {
+  animation: slideFromRight 1.2s ease-out;
+
+}
+
+.slideFromLeftBox {
+  animation: slideFromLeft 1.2s ease-out ;
+
+}
+
+@keyframes slideFromRight {
+  from {transform: translateX(10%);
+        opacity: 25%;}
+
+  to {transform: translateX(0%);
+  opacity: 100%;
+}
+
+}
+
+@keyframes slideFromLeft {
+  from {transform: translateX(-10%)}
+
+  to {transform: translateX(0%)}
+
 }

@@ -10,7 +10,8 @@ export default function AboutComponent() {
       <div className={styles.contentBox}>
         <div className={styles.textBox}>
           <p className={styles.text}>I am a recent Computer Science from 
-            <span className={styles.highlight}> UC Davis</span> who is a Software Engineering Fellow at Headstarter. I am a motivated individual
+            <span className={styles.highlight}> UC Davis</span> who is a Software Engineering 
+            Fellow at <span className={styles.highlight}>Headstarter</span>. I am a motivated individual
             looking to apply my skills developing Full-Stack applications.  
           </p>
           
