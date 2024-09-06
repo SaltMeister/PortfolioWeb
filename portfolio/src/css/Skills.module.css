@@ -1,0 +1,18 @@
+.skillWrapper {
+  display: block;
+  text-align: left;
+  margin: 2rem;
+  padding: 3rem 5vw 3rem 5vw;
+}
+.container {
+  display: flex;
+}
+.header {
+  font-size: calc(1.5vw + 10px);
+}
+li {
+  font-size: calc(1vw + 10px);
+}
+ul {
+  list-style: none;
+}

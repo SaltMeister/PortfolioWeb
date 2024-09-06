@@ -26,8 +26,8 @@ export default function DisplayComponent({title, description, gitLink, images, t
           <p className={styles.text}>{description}</p>
           <p className={styles.technologyItems}>{technologyUsed}</p>
           <p className={styles.icon}>
-            <span onClick={goToLink}> <AiFillGithub size={50} className={styles.linkIcons}/> </span> 
-            {isLiveLink? <span onClick={goToLiveLink}><AiOutlineLink size={50} className={styles.linkIcons}/></span> : null}
+            <span onClick={goToLink}> <AiFillGithub className={styles.linkIcons}/> </span> 
+            {isLiveLink? <span onClick={goToLiveLink}><AiOutlineLink className={styles.linkIcons}/></span> : null}
           </p>
 
         </div>

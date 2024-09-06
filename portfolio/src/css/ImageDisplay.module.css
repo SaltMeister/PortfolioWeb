@@ -1,32 +1,59 @@
 .wrapper {
+  margin: 10px;
+  display: block;
+}
+
+.imageContainer {
   position: relative;
   display: flex;
   justify-content: center;
 }
+.navigator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+  margin-top: 10px;
+}
 .button {
   background-color: transparent;
-  position: absolute;
-
-  height: 100%;
-  opacity: 15%;
+  position: relative;
+  opacity: 55%;
   border: none;
-  transition: all 500ms;
+  transition: all 200ms;
+
+  display: flex;
+  align-items: center;
 }
+
 .button:hover {
   color: #00ADB5;
   opacity: 75%;
 }
 
 .leftButton {
-  left: 5%;
   padding-right: 1rem;
   padding-left: 1rem;
 }
+
 .rightButton {
-  right: 5%;
   padding-right: 1rem;
   padding-left: 1rem;
 }
+
+@media only screen and (max-width: 600px) {
+  .button {
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .button {
+    font-size: 30px;
+  }
+}
+
+
 img {
   aspect-ratio: auto;
   max-height: 500px;

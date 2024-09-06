@@ -38,6 +38,7 @@ import eduTrade5 from "./images/eduTrade5.png";
 import rental1 from "./images/rental1.PNG"
 import rental2 from "./images/rental2.PNG"
 import rental3 from "./images/rental3.PNG"
+import SkillsComponent from './components/SkillsComponent';
 
 const desc1 = "A simple game of checkers created using react.";
 
@@ -63,7 +64,10 @@ function App() {
         <div id="Home">
           <AboutComponent/>          
         </div>
-
+        {/* Skills */}
+        {/* <div id="Skills">
+          <SkillsComponent/>
+        </div> */}
         {/* Project Section */}
         <div className='Projects' id="Projects" >
           <DisplayBoxComponent>
