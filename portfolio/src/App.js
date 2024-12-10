@@ -34,6 +34,11 @@ import eduTrade5 from "./images/eduTrade5.png";
 import rental1 from "./images/rental1.PNG"
 import rental2 from "./images/rental2.PNG"
 import rental3 from "./images/rental3.PNG"
+
+import tpump1 from "./images/tpump1.PNG"
+import tpump2 from "./images/tpump2.PNG"
+import tpump3 from "./images/tpump3.PNG"
+
 //import SkillsComponent from './components/SkillsComponent';
 
 const desc1 = "A simple game of checkers created using react.";
@@ -72,9 +77,9 @@ function App() {
             <DisplayComponent 
               title="Tpumps Drink Randomizer"
               description = {tpumpDescription}
-              gitLink = ""
+              gitLink = "https://github.com/SaltMeister/TpumpsRandomDrinkGenerator"
               technologyUsed= "JavaScript - Django - Google Cloud Run - Airtable - Docker - NGinX - Gunicorn"
-              images = {[]}
+              images = {[tpump1, tpump2, tpump3]}
               isLiveLink = {true}
               liveLink = "https://tpumprandomizer.com"
               willAnimateLeft = {true}
