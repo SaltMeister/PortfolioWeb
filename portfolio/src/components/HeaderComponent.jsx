@@ -14,12 +14,26 @@ export default function HeaderComponent({arrayOfHeaders}){
   return(
     <div className={styles.name}>
       <div className={styles.rightItems}>
-        {arrayOfHeaders.map((value, key) => {
+        {arrayOfHeaders.map((value, index) => {
+          if(index >= arrayOfHeaders.length - 1) {
+            return (
+              <>
+                <button className={styles.header} onClick={() => handleClick(value)}
+                  key={index}>
+                    {value}
+                </button>
+              </>
+            )
+          }
+          
           return(
-            <button className={styles.header} onClick={() => handleClick(value)}
-              key={key}>
-                {value}
-            </button>
+            <>
+              <button className={styles.header} onClick={() => handleClick(value)}
+                key={index}>
+                  {value}
+              </button>
+              <hr className={styles.border}></hr>
+            </>
           )
         })}        
       </div>

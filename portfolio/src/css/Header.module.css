@@ -28,3 +28,10 @@
 .leftItems {
   margin-left: 2rem;
 } 
+
+.border {
+  width: 1px;
+  background-color: teal;
+  border: 0px;
+  height: 10vh;
+}
