@@ -4,16 +4,7 @@
   border-radius: 10%;
   margin: 0rem 2rem 2rem 2rem;
 }
-.text {
-  text-align: left;
-  font-size: calc(5px + 1.2vw)
-}
-.textBox {
-   flex: 1;
-}
-.imageBox {
-  flex: 2;
-}
+
 .aboutWrapper {
   display: block;
   text-align: left;

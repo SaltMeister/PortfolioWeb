@@ -5,7 +5,8 @@
 .subTitle {
   margin: 0px;
   color: darkgray;
-  filter: brightness(60%);
+  font-weight: lighter;
+  filter: brightness(80%);
   font-size: calc(5px + 1vw);
 }
 .highlight { 
