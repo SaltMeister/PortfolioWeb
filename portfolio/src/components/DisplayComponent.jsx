@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import globalStyles from "../css/Global.module.css";
 import styles from "../css/Display.module.css";
 import { AiFillGithub, AiOutlineLink } from "react-icons/ai";
 import ImageDisplay from "./ImageDisplay.jsx";
@@ -27,10 +28,10 @@ export default function DisplayComponent({title, description, gitLink, images, t
         ${inView ?  (willAnimateLeft ? styles.slideFromLeftBox : styles.slideFromRightBox) : null} 
         ${styles.informationContent}`}>
         
-        <h3 className={styles.title}>{title}</h3>
-        <p className={styles.text}>{description}</p>
+        <h3 className={globalStyles.header}>{title}</h3>
+        <p className={globalStyles.text}>{description}</p>
         <p className={`${inView ?  (willAnimateLeft ? styles.delaySlideFromLeftBox : styles.delaySlideFromRightBox) : null}  
-        ${styles.technologyItems} ${styles.text}`}>{technologyUsed}</p>
+        ${styles.technologyItems} ${globalStyles.text}`}>{technologyUsed}</p>
         <p className={styles.icon}>
           <span onClick={goToLink}> <AiFillGithub className={styles.linkIcons}/> </span> 
           {isLiveLink? <span onClick={goToLiveLink}><AiOutlineLink className={styles.linkIcons}/></span> : null}

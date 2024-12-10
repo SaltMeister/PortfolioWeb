@@ -10,14 +10,6 @@
   display: flex;
 }
 
-.title {
-  font-size: calc(1.5rem + 0.5vw);
-}
-
-.text {
-  font-size: calc(1rem + 0.5vw);
-}
-
 .informationContent {
   flex-basis:60%;
 }
