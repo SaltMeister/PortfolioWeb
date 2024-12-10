@@ -3,5 +3,5 @@ name = "portfolioweb"
 pages_build_output_dir = "build"
 compatibility_date = "2024-07-28"
 
-[env]
-production = { }
+#[env]
+#production = { }
