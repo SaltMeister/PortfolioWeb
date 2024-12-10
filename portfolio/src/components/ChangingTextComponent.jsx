@@ -9,11 +9,10 @@ export default function ChangingTextComponent({textList}) {
       const index = currentIndex+1 > textList.length - 1 ? 0 : currentIndex+1;
         
       setCurrentIndex(index);
-      console.log(textList[currentIndex].split(''))
     }, 6000); 
     
     return () => clearInterval(interval);
-  }, [currentIndex])
+  }, [currentIndex, textList.length])
 
 
   if(textList === null)

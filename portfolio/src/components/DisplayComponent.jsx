@@ -1,14 +1,14 @@
-import React, { useEffect, useState } from 'react';
-import globalStyles from "../css/Global.module.css";
-import styles from "../css/Display.module.css";
+import React from 'react';
 import { AiFillGithub, AiOutlineLink } from "react-icons/ai";
-import ImageDisplay from "./ImageDisplay.jsx";
 import { useInView } from 'react-intersection-observer';
+import styles from "../css/Display.module.css";
+import globalStyles from "../css/Global.module.css";
+import ImageDisplay from "./ImageDisplay.jsx";
 
 export default function DisplayComponent({title, description, gitLink, images, technologyUsed, isLiveLink, liveLink, willAnimateLeft}) {
 
   const {ref, inView} = useInView({"triggerOnce": true});
-  const [isLeftAnimated, setIsLeftAnimated] = useState(true);
+ // const [isLeftAnimated, setIsLeftAnimated] = useState(true);
 
   const goToLink = (e) => {
     window.open(gitLink, "Null");
@@ -17,9 +17,9 @@ export default function DisplayComponent({title, description, gitLink, images, t
     window.open(liveLink, "Null");
   }
 
-  useEffect(() => {
-    setIsLeftAnimated(willAnimateLeft)
-  }, [willAnimateLeft])
+  // useEffect(() => {
+  //   setIsLeftAnimated(willAnimateLeft)
+  // }, [willAnimateLeft])
 
   return(
     <div ref={ref} className={styles.displayItem}>
