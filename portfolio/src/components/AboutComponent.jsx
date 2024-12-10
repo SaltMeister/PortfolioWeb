@@ -1,39 +1,45 @@
 import React from "react";
-import globalStyles from "../css/Global.module.css";
+// Global Styles for text sizes
+import globalStyles from "../css/Global.module.css"; 
 import styles from "../css/About.module.css";
 import { AiFillGithub } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
+import ChangingTextComponent from "./ChangingTextComponent";
 export default function AboutComponent() {
   const redirectLink = (url) => {
-    window.open(url)
+    window.open(url, "_blank");
   }
+
+
+  const textDisplayList = ["Software Engineer", "IT Technician"];
 
   return(
     <div className={styles.aboutWrapper}>
+      {/* Top Section of About */}
+      <div>
+        <h3 className={globalStyles.largeTitle}>Hello, I'm Simon</h3>
+        <ChangingTextComponent 
+          textList={textDisplayList}
+        />
 
-      <h3 className={globalStyles.largeTitle}>Hello, I'm Simon</h3>
-      <h2 className={globalStyles.subTitle}>Student - Software Engineer</h2>
+        <div className={styles.flex}>
+          <div onClick={() => redirectLink('https://github.com/SaltMeister')} 
+          className={styles.socialLinks}>
+            <AiFillGithub/>
+          </div>
 
-      <div className={styles.flex}>
-        <div onClick={() => redirectLink('https://github.com/SaltMeister')} 
-        className={styles.socialLinks}>
-          <AiFillGithub/>
-        </div>
-
-        <div onClick={() => redirectLink('https://www.linkedin.com/in/sihuang5/')}
-        className={styles.socialLinks}>
-          <AiFillLinkedin/>
-        </div >        
+          <div onClick={() => redirectLink('https://www.linkedin.com/in/sihuang5/')}
+          className={styles.socialLinks}>
+            <AiFillLinkedin/>
+          </div >        
+        </div>        
       </div>
-
-      
-
+      {/* Gap */}
+      {/* Bottom Section of About */}
       <div className={[styles.contentBox, styles.flex]}>
         <div className={styles.textBox}>
           <p className={globalStyles.text}>I am a recent Computer Science from 
-            <span className={globalStyles.highlight}> UC Davis</span> who is a Software Engineering 
-            Fellow at <span className={globalStyles.highlight}>Headstarter</span>. I am a motivated individual
-            looking to apply my skills developing Full-Stack applications.  
+            <span className={globalStyles.highlight}> UC Davis</span> interested in both Software Engineering and Information Technology. 
           </p>
           
           <p className={globalStyles.text}>Outside, you can find me hiking, gardening,

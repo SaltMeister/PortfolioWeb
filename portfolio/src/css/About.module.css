@@ -1,9 +1,12 @@
-.image {
+.contentBox {
+  margin-top: calc(1rem + 1vh);
+}
+/* .image {
   max-height: 250px;
   max-width: 150px;
   border-radius: 10%;
   margin: 0rem 2rem 2rem 2rem;
-}
+} */
 
 .aboutWrapper {
   display: block;
@@ -25,14 +28,11 @@
 .socialLinks:hover {
   color: lightblue;
 }
+
+
+
 @media only screen and (max-width: 600px) {
   .socialLinks {
     font-size: 30px;
   }
-}
-
-
-
-.contentBox {
-  margin-top: calc(1rem + 1vh);
 }

@@ -1,13 +1,14 @@
 .largeTitle {
   margin: 0px;
-  font-size: calc(5px + 2vw);
+  font-size: calc(1.5rem + 1.5vw);
 }
 .subTitle {
   margin: 0px;
   color: darkgray;
   font-weight: lighter;
   filter: brightness(80%);
-  font-size: calc(5px + 1vw);
+  font-size: calc(1rem + 0.75vw);
+  
 }
 .highlight { 
   color: #00ADB5;
