@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.bda2209c.css",
-    "main.js": "/static/js/main.dc75cd1c.js",
+    "main.css": "/static/css/main.7e6fc493.css",
+    "main.js": "/static/js/main.1aad5bd1.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/ppal.png": "/static/media/ppal.8ccc8ba19d4dfe221e62.png",
     "static/media/rental1.PNG": "/static/media/rental1.4cd256ecfc6290bee181.PNG",
@@ -9,27 +9,28 @@
     "static/media/eduTrade3.png": "/static/media/eduTrade3.da5e3f10b22469f71836.png",
     "static/media/defender.png": "/static/media/defender.3b4eadaff1a825b095f4.png",
     "static/media/eduTrade5.png": "/static/media/eduTrade5.d64d442120ed91cd7406.png",
-    "static/media/fitFlowHome.png": "/static/media/fitFlowHome.c6f8d0187b59125036b6.png",
-    "static/media/fitFlow2.png": "/static/media/fitFlow2.3d85305cfce190e9fedd.png",
     "static/media/eduTrade1.png": "/static/media/eduTrade1.f8321f53a77dbfa914c5.png",
     "static/media/mp3Player.png": "/static/media/mp3Player.6a2f4f221ec86ae3dfe5.png",
     "static/media/checkers.png": "/static/media/checkers.2fcb19ac095d760bb078.png",
     "static/media/checkers2.png": "/static/media/checkers2.7efe836b10894895a561.png",
     "static/media/checkers1.png": "/static/media/checkers1.04760a030652a0681ae9.png",
+    "static/media/tpump1.PNG": "/static/media/tpump1.b9fdbef4adc90c79a3f5.PNG",
+    "static/media/Simon_Resume.pdf": "/static/media/Simon_Resume.0b1d351f27456370ec86.pdf",
     "static/media/rental3.PNG": "/static/media/rental3.5701c9538a47de0a3ac8.PNG",
+    "static/media/tpump2.PNG": "/static/media/tpump2.12b6a6572a28000fcc21.PNG",
     "static/media/codeReview3.PNG": "/static/media/codeReview3.fff50effbc1d89732598.PNG",
-    "static/media/fitFlow3.png": "/static/media/fitFlow3.c59a79847758ed8e602d.png",
     "static/media/codeReview1.PNG": "/static/media/codeReview1.2e1464ef942180db2bb6.PNG",
+    "static/media/tpump3.PNG": "/static/media/tpump3.5fc989c0f16a869c316f.PNG",
     "static/media/codeReview2.PNG": "/static/media/codeReview2.d842436fa4c13871627f.PNG",
     "static/media/rental2.PNG": "/static/media/rental2.f819010076a63e002cbf.PNG",
     "static/media/eduTrade4.png": "/static/media/eduTrade4.011eeb1b340000fafbdd.png",
     "index.html": "/index.html",
-    "main.bda2209c.css.map": "/static/css/main.bda2209c.css.map",
-    "main.dc75cd1c.js.map": "/static/js/main.dc75cd1c.js.map",
+    "main.7e6fc493.css.map": "/static/css/main.7e6fc493.css.map",
+    "main.1aad5bd1.js.map": "/static/js/main.1aad5bd1.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bda2209c.css",
-    "static/js/main.dc75cd1c.js"
+    "static/css/main.7e6fc493.css",
+    "static/js/main.1aad5bd1.js"
   ]
 }
