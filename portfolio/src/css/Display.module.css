@@ -1,37 +1,38 @@
 .displayItem {
-  display: block;
+  display: flex;
+  flex-direction: row;
   padding: 2rem;
   padding-bottom: 4rem;
   padding-top: 4rem;
 }
 
-.content {
+.flex {
   display: flex;
 }
 
 .title {
-  font-size: calc(10px + 1.5vw);
+  font-size: calc(1.5rem + 0.5vw);
 }
 
 .text {
-  font-size: calc(5px + 1vw);
+  font-size: calc(1rem + 0.5vw);
 }
 
 .informationContent {
-  flex: 1;
+  flex-basis:60%;
 }
 
 .imageContent {
   display: flex;
   justify-content: center;
-  flex: 1;
+  align-items: center;
+  flex-basis:40%;
 }
 
 
 .technologyItems {
   color: #00ADB5;
   text-align: left;
-  font-size: calc(2px + 1vw);
 }
 
 @media only screen and (max-width: 600px) {
@@ -58,6 +59,8 @@
   color: lightblue;
 }
 
+
+
 .slideFromRightBox {
   animation: slideFromRight 1.2s ease-out;
 
@@ -66,6 +69,23 @@
 .slideFromLeftBox {
   animation: slideFromLeft 1.2s ease-out ;
 
+}
+
+.delaySlideFromRightBox {
+  animation: slideFromRight 1.7s ease-out;
+
+}
+
+.delaySlideFromLeftBox {
+  animation: slideFromLeft 1.7s ease-out ;
+
+}
+
+.imageSlideLeft {
+  animation: slideFromLeft 1.7s ease-in-out;
+}
+.imageSlideRight {
+  animation: slideFromLeft 1.7s ease-in-out;
 }
 
 @keyframes slideFromRight {
@@ -79,8 +99,16 @@
 }
 
 @keyframes slideFromLeft {
-  from {transform: translateX(-10%)}
+  from {transform: translateX(-10%);
+    opacity: 25%;}
 
-  to {transform: translateX(0%)}
+  to {transform: translateX(0%);
+    opacity: 100%;}
 
+}
+
+@media screen and (max-width: 700px) {
+  .displayItem {
+    flex-direction: column;
+  }
 }

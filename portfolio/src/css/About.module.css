@@ -25,24 +25,22 @@
   display: flex;
 }
 
+.socialLinks {
+  transition: all;
+  transition-duration: 300ms;
+  color: #00565a;
+  font-size: 50px;
+}
+.socialLinks:hover {
+  color: lightblue;
+}
 @media only screen and (max-width: 600px) {
   .socialLinks {
     font-size: 30px;
   }
 }
-@media only screen and (min-width: 600px) {
-  .socialLinks {
-    font-size: 50px;
-  }
-}
-.socialLinks {
-  transition: all;
-  transition-duration: 300ms;
-  color: #00565a;
-}
-.socialLinks:hover {
-  color: lightblue;
-}
+
+
 
 .contentBox {
   margin-top: calc(1rem + 1vh);

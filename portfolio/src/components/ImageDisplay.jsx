@@ -13,7 +13,6 @@ const ImageDisplay = ({ imageList }) => {
 
     if (index === imageList.length - 1 && changeValue === 1)
       return;
-    console.log(index);
     setIndex(index + changeValue);
 
   }
@@ -25,6 +24,7 @@ const ImageDisplay = ({ imageList }) => {
         <img
           src={imageList[index]}
           alt=' '
+          key="images"
         />
       </div>
       {/* Image Slider */}
@@ -40,7 +40,7 @@ const ImageDisplay = ({ imageList }) => {
         {/*  Dots for images */}
         {imageList?.map((image, i) => {
           if (i === index)
-            return <GoDotFill color="#00ADB5"/>
+            return <GoDotFill color="#00ADB5" key={i}/>
 
           else return <GoDot />
         })}

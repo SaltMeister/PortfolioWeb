@@ -22,10 +22,6 @@ import checkers2 from "./images/checkers2.png";
 
 import bitCoin from "./images/defender.png";
 
-import fitFlow from "./images/fitFlowHome.png";
-import fitFlow2 from "./images/fitFlow2.png";
-import fitFlow3 from "./images/fitFlow3.png";
-
 import mp3 from "./images/mp3Player.png";
 import ppal from "./images/ppal.png";
 
@@ -38,7 +34,7 @@ import eduTrade5 from "./images/eduTrade5.png";
 import rental1 from "./images/rental1.PNG"
 import rental2 from "./images/rental2.PNG"
 import rental3 from "./images/rental3.PNG"
-import SkillsComponent from './components/SkillsComponent';
+//import SkillsComponent from './components/SkillsComponent';
 
 const desc1 = "A simple game of checkers created using react.";
 
@@ -46,9 +42,10 @@ const desc2 ="A Tower Defence android game where you protect your precious graph
 
 const desc3 ="A Music player application created with C# and the .Net framework. Select folders you wish to look for mp3 files and play them.";
 
-const desc4 = "A website created for CitroHacks 2023 that uses the OpenAI api to generate weekly plans for the user. I worked on the back-end communications for this project.";
-
 const desc5 ="A website that allows users to search and save recipes. Users can sign up and keep their list of saved recipes, and view them at any time. I worked on the user authentication between the client and server/database and the login/signup page."
+
+const tpumpDescription = `A site that allows Tpumps customers to generate random flavors for their drink. Users can select a list of possible flavor options, and customize the sugar and ice level, the tea type, and milk options.
+ The site also allows users to view the latest creations that other users have generated.`
 
 const eduDesc = ["A used item selling website built to help students find items that other students no longer need. Users can sell or give away their old school supplies to others in the local area. Users can search and filter their interests by location and communicate through live chatting to confirm their meetup location.", <br />, "I developed the database communication from the client, the search query and location filters, and the front end for the item displays for each listing."]
 const rentABikeDesc = "A bike rental site that allows users to rent out bikes from a list of available bikes. Users can rent out 1 bike at a time and must be registered to do so. The website communicates with a backend api to get user authentication and the ability to view listed bikes to rent out."
@@ -72,6 +69,17 @@ function App() {
         <div className='Projects' id="Projects" >
           <DisplayBoxComponent>
 
+            <DisplayComponent 
+              title="Tpumps Drink Randomizer"
+              description = {tpumpDescription}
+              gitLink = ""
+              technologyUsed= "JavaScript - Django - Google Cloud Run - Airtable - Docker - NGinX - Gunicorn"
+              images = {[]}
+              isLiveLink = {true}
+              liveLink = "https://tpumprandomizer.com"
+              willAnimateLeft = {true}
+            />
+            
             <DisplayComponent
               title = "Code Review Webtool"
               description = {codeReviewDescription}
@@ -80,7 +88,7 @@ function App() {
               images = {[codeReview1, codeReview3, codeReview2]}
               isLiveLink = {true}
               liveLink= "https://franktest1-alz74memjq-wl.a.run.app/"
-              direction="right"
+              willAnimateLeft={false}
             />
               
             <DisplayComponent
@@ -91,8 +99,9 @@ function App() {
               images = {[rental1, rental2, rental3]}
               isLiveLink = {false}
               liveLink = ""
-              direction="left"
+              willAnimateLeft={true}
             />
+
             <DisplayComponent
               title = "EduTrade"
               description = {eduDesc}
@@ -101,8 +110,9 @@ function App() {
               images = {[eduTrade1, eduTrade2, eduTrade3, eduTrade4, eduTrade5]}
               isLiveLink = {true}
               liveLink = "https://jeffuz.github.io/EduTrade/"
-              direction="right"
+              willAnimateLeft={false}
             />
+
             <DisplayComponent 
               title = "Pantry Pal" 
               description = {desc5} 
@@ -111,21 +121,9 @@ function App() {
               images = {[ppal]}
               isLiveLink = {false}
               liveLink=""
-              direction="left"
+              willAnimateLeft={true}
               />
 
-
-            <DisplayComponent 
-              title = "FitFlow" 
-              description = {desc4} 
-              gitLink = "https://github.com/Jeffuz/FitFlow"
-              technologyUsed  ="React - Flask - MongoDB - Tailwind CSS"
-              images = {[fitFlow, fitFlow2, fitFlow3]}
-              isLiveLink = {true}
-              liveLink = "https://devpost.com/software/fitflow-pacuwy"
-              direction="right"
-              />
-            
             <DisplayComponent
               title = "Mp3 Player"
               description = {desc3}
@@ -134,7 +132,8 @@ function App() {
               images = {[mp3]}
               isLiveLink = {false}
               liveLink=""
-              direction="left"/>
+              willAnimateLeft={true}
+              />
 
             <DisplayComponent
               title = "Checkers"
@@ -144,7 +143,7 @@ function App() {
               images = {[checkers1, checkers2, checkers]}
               isLiveLink = {true}
               liveLink = "https://saltmeister.github.io/checkers/"
-              direction="right"
+              willAnimateLeft={false}
               />
 
             <DisplayComponent
@@ -155,7 +154,7 @@ function App() {
               images = {[bitCoin]}
               isLiveLink = {false}
               liveLink=""
-              direction="left"
+              willAnimateLeft={true}
             />
           </DisplayBoxComponent>
         </div>
