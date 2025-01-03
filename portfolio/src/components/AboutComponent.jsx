@@ -39,7 +39,9 @@ export default function AboutComponent() {
       <div className={[styles.contentBox, styles.flex]}>
         <div className={styles.textBox}>
           <p className={globalStyles.text}>I am a recent Computer Science from 
-            <span className={globalStyles.highlight}> UC Davis</span> interested in both Software Engineering and Information Technology. 
+            <span className={globalStyles.highlight}> UC Davis</span> interested in both Software Engineering and Information Technology.
+            I enjoy solving people's tech related problems and have plenty of customer service experience from previous jobs. 
+            Currently pursuing Google IT Helpdesk certification before moving on to Comp TIA A+.  
           </p>
           
           <p className={globalStyles.text}>Outside, you can find me hiking, gardening,

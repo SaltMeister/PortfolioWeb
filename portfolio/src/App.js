@@ -38,6 +38,7 @@ import rental3 from "./images/rental3.PNG"
 import tpump1 from "./images/tpump1.PNG"
 import tpump2 from "./images/tpump2.PNG"
 import tpump3 from "./images/tpump3.PNG"
+import { useEffect } from 'react';
 
 //import SkillsComponent from './components/SkillsComponent';
 
@@ -57,6 +58,10 @@ const rentABikeDesc = "A bike rental site that allows users to rent out bikes fr
 const codeReviewDescription = "A webtool that allows teams to perform the code review process online. Users can upload their changes files locally, but can also import their branch from github and push the reviewed changes back into github. This was a group project under the mentorship of a senior Google employee. I worked on the Full-Stack, establishing cloud database, and some prompt engineering for our LLM."
 
 function App() {
+  useEffect(() => {
+    document.title = "Simon Portfolio"
+  }, []);
+  
   return (
     <div className="App">
       <header>
